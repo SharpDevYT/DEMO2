@@ -1,1005 +1,864 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fit Generation Gym — Best Gym in Shahdara, Delhi | 4.9★ Rated</title>
-<meta name="description" content="Fit Generation Gym (फिट जनरेशन जिम) — Shahdara's 4.9★ rated gym on Main 100 Feet Rd, Durgapuri Extension. Modern equipment, certified trainers, high-energy group classes. Open daily 6 AM – 10 PM. Call 087009 54343.">
-<meta property="og:title" content="Fit Generation Gym — Shahdara, Delhi">
-<meta property="og:description" content="4.9★ rated by 106 members. Modern machines, certified trainers, high-energy group classes. First trial session free.">
+<title>Inspire Academy — Coaching Center in Shahdara, Delhi | 4.8★ (69 Reviews)</title>
+<meta name="description" content="Inspire Academy (इंस्पायर अकादमी) is a coaching centre at Shanti Building, Ram Nagar, Shahdara, Delhi 110032. Rated 4.8/5 from 69 Google reviews. Open · closes 9 PM. Call 097166 92702.">
+<meta property="og:title" content="Inspire Academy — Coaching Center, Shahdara, Delhi">
+<meta property="og:description" content="Rated 4.8★ by 69 students & parents on Google. Open · closes 9 PM. Call 097166 92702.">
 <meta property="og:type" content="website">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ExerciseGym",
-  "name": "Fit Generation Gym",
-  "alternateName": "फिट जनरेशन जिम",
-  "telephone": "+918700954343",
+  "@type": "LocalBusiness",
+  "name": "Inspire Academy",
+  "alternateName": "इंस्पायर अकादमी",
+  "description": "Coaching Center in Ram Nagar, Shahdara, Delhi",
+  "telephone": "+91-9716692702",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "C-245, Main 100 Feet Rd, Durgapuri Extension, Hardevpuri",
-    "addressLocality": "Shahdara, Delhi",
-    "postalCode": "110093",
+    "streetAddress": "1/2239, Shanti Building, Ram Nagar",
+    "addressLocality": "Shahdara",
+    "addressRegion": "Delhi",
+    "postalCode": "110032",
     "addressCountry": "IN"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 28.689895704746913, "longitude": 77.29590607715417 },
-  "openingHours": "Mo-Su 06:00-22:00",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "106" },
-  "priceRange": "₹₹"
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "69" },
+  "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "closes": "21:00" }
 }
 </script>
 <style>
   :root{
-    --volt:#d4f93a;
-    --bg:#07080a;
-    --ink:#f4f5f0;
-    --muted:#9ba09b;
+    --paper:#FBF9F2;
+    --ink:#1B1844;
+    --indigo:#4F46E5;
+    --indigo-deep:#312E81;
+    --amber:#F59E0B;
+    --amber-soft:#FDE9C3;
   }
-  html{background:var(--bg)}
-  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
-  .font-display{font-family:'Archivo',sans-serif}
-  .text-volt{color:var(--volt)}
-  .bg-volt{background-color:var(--volt)}
-  .border-volt{border-color:var(--volt)}
-
-  .grid-bg{position:relative}
-  .grid-bg::before{
-    content:"";position:absolute;inset:0;pointer-events:none;
-    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
-    background-size:46px 46px;
-    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 30%,#000 30%,transparent 100%);
-            mask-image:radial-gradient(ellipse 90% 80% at 50% 30%,#000 30%,transparent 100%);
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Mukta',system-ui,sans-serif;
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(to right, rgba(79,70,229,.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(79,70,229,.055) 1px, transparent 1px);
+    background-size:34px 34px;
+    color:var(--ink);
   }
-  .noise::after{
-    content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  .font-display{font-family:'Baloo 2',ui-rounded,system-ui,sans-serif}
+  ::selection{background:var(--amber);color:var(--ink)}
+  section{scroll-margin-top:96px}
+
+  /* Devanagari outline word */
+  .outline-dev{color:transparent;-webkit-text-stroke:2px rgba(79,70,229,.16)}
+
+  /* Reveal on scroll (CSS animation, class-triggered) */
+  .reveal{opacity:0;transform:translateY(30px)}
+  .reveal.in{animation:rise .9s cubic-bezier(.16,1,.3,1) both}
+  @keyframes rise{to{opacity:1;transform:translateY(0)}}
+
+  /* Stat counters pop (CSS only) */
+  .stats .num{opacity:0}
+  .stats.in .num{animation:statPop 1s cubic-bezier(.16,1,.3,1) both}
+  .stats.in .cell:nth-child(1) .num{animation-delay:.05s}
+  .stats.in .cell:nth-child(2) .num{animation-delay:.2s}
+  .stats.in .cell:nth-child(3) .num{animation-delay:.35s}
+  .stats.in .cell:nth-child(4) .num{animation-delay:.5s}
+  @keyframes statPop{
+    0%{opacity:0;transform:translateY(26px) scale(.7);filter:blur(6px)}
+    60%{opacity:1;transform:translateY(-4px) scale(1.04);filter:blur(0)}
+    100%{opacity:1;transform:translateY(0) scale(1)}
   }
-  .glass{
-    background:rgba(255,255,255,.045);
-    border:1px solid rgba(255,255,255,.1);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+
+  /* Marquee */
+  .marquee{display:flex;width:max-content;animation:scrollX 26s linear infinite}
+  @keyframes scrollX{to{transform:translateX(-50%)}}
+  .sep{width:8px;height:8px;transform:rotate(45deg);background:var(--amber);border-radius:2px;flex:none}
+
+  /* Tabs */
+  .tab-btn{transition:all .35s cubic-bezier(.16,1,.3,1);color:rgba(27,24,68,.62)}
+  .tab-btn.active{background:var(--indigo);color:#fff;box-shadow:0 10px 26px -10px rgba(79,70,229,.55)}
+  .tab-panel{display:none}
+  .tab-panel.active{display:block;animation:panelIn .55s cubic-bezier(.16,1,.3,1) both}
+  @keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+  /* Buttons */
+  .btn{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:translateY(0) scale(.98)}
+  .btn-primary{background:var(--indigo);color:#fff;box-shadow:0 14px 30px -12px rgba(79,70,229,.6)}
+  .btn-primary:hover{box-shadow:0 20px 38px -12px rgba(79,70,229,.65)}
+  .btn-amber{background:var(--amber);color:var(--ink);box-shadow:0 14px 30px -12px rgba(245,158,11,.55)}
+  .btn-outline{border:2px solid rgba(79,70,229,.3);color:var(--indigo-deep)}
+  .btn-outline:hover{border-color:var(--indigo);background:rgba(79,70,229,.06)}
+
+  /* Cards */
+  .card{background:#fff;border-radius:1.75rem;box-shadow:0 18px 45px -22px rgba(27,24,68,.22)}
+  .card-hover{transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s}
+  .card-hover:hover{transform:translateY(-8px);box-shadow:0 30px 60px -24px rgba(27,24,68,.3)}
+
+  /* Scroll snap row */
+  .snap-row{scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .snap-row::-webkit-scrollbar{display:none}
+  .snap-row > *{scroll-snap-align:start}
+  .snap-pad{padding-left:1.25rem;padding-right:1.25rem}
+  @media (min-width:768px){
+    .snap-pad{padding-left:max(2rem,calc((100vw - 80rem)/2 + 2rem));padding-right:max(2rem,calc((100vw - 80rem)/2 + 2rem))}
   }
-  .glass-strong{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.12);
-    backdrop-filter:blur(22px);
-    -webkit-backdrop-filter:blur(22px);
+
+  /* Floating enquire */
+  .ping::before{content:"";position:absolute;inset:-4px;border-radius:9999px;border:2px solid var(--amber);animation:ping 1.8s cubic-bezier(0,0,.2,1) infinite}
+  @keyframes ping{75%,100%{transform:scale(1.35);opacity:0}}
+
+  /* Modal */
+  #modal{transition:opacity .3s ease}
+  #modal .sheet{animation:sheetUp .45s cubic-bezier(.16,1,.3,1) both}
+  @keyframes sheetUp{from{opacity:0;transform:translateY(40px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+  .shake{animation:shake .4s}
+  @keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+
+  /* Info table → stacked cards on mobile */
+  @media (max-width:767px){
+    .info-table thead{display:none}
+    .info-table,.info-table tbody,.info-table tr,.info-table td{display:block;width:100%}
+    .info-table tr{margin-bottom:1rem;background:#fff;border-radius:1.25rem;box-shadow:0 14px 34px -20px rgba(27,24,68,.25);padding:.5rem;overflow:hidden}
+    .info-table td{border:0!important;padding:.85rem 1rem!important}
+    .info-table td:first-child{padding-bottom:.25rem!important}
   }
-  .stars svg{fill:currentColor;stroke:none}
-
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
-  .reveal.in{opacity:1;transform:none}
-
-  .img-zoom img{transition:transform 1.1s cubic-bezier(.22,1,.36,1),filter .6s ease}
-  .img-zoom:hover img{transform:scale(1.06)}
-
-  .nav-blur{background:rgba(7,8,10,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-
-  @keyframes marquee{to{transform:translateX(-50%)}}
-  .marquee-track{display:flex;width:max-content;animation:marquee 26s linear infinite}
-  .marquee-track:hover{animation-play-state:paused}
-
-  .bar{transform-origin:bottom;transform:scaleY(0);transition:transform .7s cubic-bezier(.22,1,.36,1)}
-  .bars-in .bar{transform:scaleY(1)}
-
-  @keyframes pulse-dot{0%,100%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}50%{box-shadow:0 0 0 6px rgba(74,222,128,0)}}
-  .live-dot{animation:pulse-dot 2s infinite}
-
-  @keyframes float-slow{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-  .float-slow{animation:float-slow 6s ease-in-out infinite}
-
-  ::selection{background:var(--volt);color:#07080a}
-  ::-webkit-scrollbar{width:10px}
-  ::-webkit-scrollbar-track{background:#0a0b0d}
-  ::-webkit-scrollbar-thumb{background:#2a2d2f;border-radius:8px}
-  ::-webkit-scrollbar-thumb:hover{background:var(--volt)}
-
-  input,select{color-scheme:dark}
-  .field{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);transition:border-color .3s,box-shadow .3s}
-  .field:focus{border-color:var(--volt);box-shadow:0 0 0 3px rgba(212,249,58,.15);outline:none}
-
-  .map-dark{filter:grayscale(1) invert(.92) hue-rotate(180deg) contrast(.92) brightness(.95)}
-
-  @media (prefers-reduced-motion:reduce){
-    .marquee-track,.float-slow,.live-dot{animation:none}
-    .reveal{opacity:1;transform:none;transition:none}
+  @media (min-width:768px){
+    .info-table tr{transition:background .3s}
+    .info-table tbody tr:hover{background:rgba(79,70,229,.045)}
   }
+
+  .chip-ghost{background:rgba(251,249,242,.92);backdrop-filter:blur(8px)}
+  input,textarea{outline:none}
+  input:focus,textarea:focus{border-color:var(--indigo);box-shadow:0 0 0 4px rgba(79,70,229,.14)}
+  .lucide{flex:none}
 </style>
 </head>
-<body class="antialiased" id="top">
+<body class="antialiased overflow-x-hidden">
 
-<!-- ============ ANNOUNCEMENT BAR ============ -->
-<div class="bg-volt text-[#07080a] relative z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex flex-wrap items-center justify-center sm:justify-between gap-x-6 gap-y-1 text-[12px] sm:text-[13px] font-semibold tracking-wide">
-    <span class="flex items-center gap-1.5 uppercase">
-      <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
-      4.9 rated · 106 Google reviews
-    </span>
-    <span class="hidden md:flex items-center gap-1.5 uppercase">
-      <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
-      First trial session absolutely free
-    </span>
-    <a href="tel:+918700954343" class="flex items-center gap-1.5 uppercase hover:opacity-70 transition-opacity">
-      <i data-lucide="phone" class="w-3.5 h-3.5"></i>
-      087009 54343
+<!-- HEADER -->
+<header id="siteHeader" class="fixed top-0 left-0 right-0 z-40 transition-shadow duration-300 bg-[#FBF9F2]/85 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-[76px] flex items-center justify-between gap-4">
+    <a href="#hero" class="flex items-center gap-3">
+      <span class="w-11 h-11 rounded-2xl bg-[var(--indigo)] text-white grid place-items-center shadow-lg shadow-indigo-600/30">
+        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+      </span>
+      <span class="leading-tight">
+        <span class="font-display font-bold text-lg block tracking-tight">Inspire Academy</span>
+        <span class="text-xs text-indigo-900/60 font-medium block -mt-0.5">इंस्पायर अकादमी · Shahdara</span>
+      </span>
     </a>
-  </div>
-</div>
-
-<!-- ============ NAV ============ -->
-<header id="nav" class="sticky top-0 z-40 transition-all duration-300 border-b border-white/5">
-  <div class="nav-blur">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[68px] flex items-center justify-between">
-      <a href="#top" class="flex items-center gap-3 group">
-        <span class="w-10 h-10 rounded-xl bg-volt flex items-center justify-center transition-transform duration-300 group-hover:rotate-[-8deg]">
-          <i data-lucide="dumbbell" class="w-5 h-5 text-[#07080a]"></i>
-        </span>
-        <span class="leading-none">
-          <span class="font-display italic font-black uppercase tracking-tight text-lg block">Fit Generation</span>
-          <span class="text-[10px] tracking-[0.35em] uppercase text-zinc-400">Gym · Shahdara</span>
-        </span>
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-[13px] font-medium text-zinc-300">
-        <a href="#services" class="hover:text-volt transition-colors">Programs</a>
-        <a href="#why" class="hover:text-volt transition-colors">Why Us</a>
-        <a href="#reviews" class="hover:text-volt transition-colors">Reviews</a>
-        <a href="#contact" class="hover:text-volt transition-colors">Location</a>
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="#join" class="hidden sm:inline-flex items-center gap-2 bg-volt text-[#07080a] font-bold text-[13px] uppercase tracking-wide px-5 py-2.5 rounded-full hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300">
-          <i data-lucide="message-circle" class="w-4 h-4"></i>
-          Join Now
-        </a>
-        <button id="menuBtn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-white/10" aria-label="Open menu">
-          <i data-lucide="menu" class="w-5 h-5"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div id="mobileMenu" class="md:hidden hidden nav-blur border-t border-white/5">
-    <nav class="px-6 py-5 flex flex-col gap-4 text-sm font-medium text-zinc-200">
-      <a href="#services" class="mobile-link flex items-center justify-between">Programs <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt"></i></a>
-      <a href="#why" class="mobile-link flex items-center justify-between">Why Us <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt"></i></a>
-      <a href="#reviews" class="mobile-link flex items-center justify-between">Reviews <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt"></i></a>
-      <a href="#contact" class="mobile-link flex items-center justify-between">Location <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt"></i></a>
-      <a href="#join" class="mobile-link mt-1 inline-flex items-center justify-center gap-2 bg-volt text-[#07080a] font-bold uppercase tracking-wide px-5 py-3 rounded-full">
-        <i data-lucide="message-circle" class="w-4 h-4"></i> Join on WhatsApp
-      </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-indigo-950/70">
+      <a href="#about" class="hover:text-[var(--indigo)] transition-colors">About</a>
+      <a href="#info" class="hover:text-[var(--indigo)] transition-colors">Centre Info</a>
+      <a href="#mentors" class="hover:text-[var(--indigo)] transition-colors">Mentors</a>
+      <a href="#reviews" class="hover:text-[var(--indigo)] transition-colors">Reviews</a>
+      <a href="#visit" class="hover:text-[var(--indigo)] transition-colors">Visit Us</a>
     </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+919716692702" class="btn btn-outline hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold">
+        <i data-lucide="phone" class="w-4 h-4"></i> 097166 92702
+      </a>
+      <button data-open-modal class="btn btn-amber inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> Enquire Now
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- ============ HERO (SPLIT) ============ -->
-<section class="relative grid-bg noise overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=1920" alt="Lifter preparing a heavy barbell at Fit Generation Gym" class="w-full h-full object-cover opacity-30">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#07080a]/85 via-[#07080a]/70 to-[#07080a]"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-[#07080a]/80 via-transparent to-[#07080a]/40"></div>
-    <div class="absolute -top-24 right-[8%] w-[480px] h-[480px] rounded-full bg-volt/15 blur-[140px] pointer-events-none"></div>
-  </div>
+<!-- HERO -->
+<section id="hero" class="relative pt-32 md:pt-40 pb-16 md:pb-24 overflow-hidden">
+  <div class="absolute -top-6 right-0 font-display font-extrabold text-[22vw] md:text-[15vw] leading-none outline-dev select-none pointer-events-none whitespace-nowrap">इंस्पायर</div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[1.05fr_.95fr] gap-14 lg:gap-10 items-center relative">
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-[1.08fr_.92fr] gap-12 lg:gap-16 items-center">
-    <!-- LEFT -->
+    <!-- Left : tabs + copy -->
     <div>
-      <a href="#reviews" class="reveal inline-flex items-center gap-2.5 glass rounded-full pl-2 pr-4 py-1.5 text-[13px] text-zinc-200 hover:border-volt/50 transition-colors">
-        <span class="stars flex items-center gap-0.5 text-volt bg-black/40 rounded-full px-2 py-1">
-          <i data-lucide="star" class="w-3.5 h-3.5"></i><i data-lucide="star" class="w-3.5 h-3.5"></i><i data-lucide="star" class="w-3.5 h-3.5"></i><i data-lucide="star" class="w-3.5 h-3.5"></i><i data-lucide="star" class="w-3.5 h-3.5"></i>
-        </span>
-        <span class="font-semibold">4.9</span>
-        <span class="text-zinc-400">106 Google reviews</span>
-        <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-volt"></i>
-      </a>
-
-      <h1 class="reveal font-display font-black italic uppercase leading-[0.88] tracking-tight mt-7 text-[clamp(3.2rem,8vw,6.8rem)]">
-        <span class="block">Train</span>
-        <span class="block text-volt">Beyond</span>
-        <span class="block">Limits<span class="text-volt">.</span></span>
-      </h1>
-
-      <p class="reveal mt-6 text-base sm:text-lg text-zinc-300 max-w-xl leading-relaxed">
-        <span class="font-semibold text-white">Fit Generation Gym <span class="text-volt">· फिट जनरेशन जिम</span></span> — an atmosphere of strength, ambition, and consistency on Main 100 Feet Road, Shahdara. Modern machines, certified trainers, and the friendliest crowd in East Delhi.
-      </p>
-
-      <div class="reveal mt-8 flex flex-wrap items-center gap-4">
-        <a href="#join" class="group inline-flex items-center gap-2.5 bg-volt text-[#07080a] font-display font-extrabold uppercase tracking-wide px-8 py-4 rounded-full text-sm hover:brightness-110 hover:-translate-y-1 transition-all duration-300 shadow-[0_0_40px_-8px_rgba(212,249,58,.5)]">
-          Book Free Trial
-          <i data-lucide="arrow-right" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"></i>
-        </a>
-        <a href="tel:+918700954343" class="inline-flex items-center gap-2.5 glass rounded-full px-7 py-4 text-sm font-semibold hover:border-volt/60 transition-colors">
-          <i data-lucide="phone" class="w-4 h-4 text-volt"></i>
-          087009 54343
-        </a>
+      <div class="inline-flex flex-wrap items-center gap-2 rounded-full bg-white shadow-md shadow-indigo-900/5 px-4 py-2 text-xs font-bold text-indigo-950/80 mb-7">
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-[var(--indigo)]"></i> Coaching Center · Ram Nagar, Shahdara</span>
+        <span class="w-1 h-1 rounded-full bg-amber-500"></span>
+        <span class="inline-flex items-center gap-1"><i data-lucide="star" class="w-3.5 h-3.5 text-amber-500 fill-amber-400"></i> 4.8 (69 Google reviews)</span>
       </div>
 
-      <div class="reveal mt-10 flex items-center gap-2 text-[13px] text-zinc-400">
-        <span class="live-dot w-2 h-2 rounded-full bg-green-400 inline-block"></span>
-        <span id="openStatus">Open now · Closes 10:00 PM · Open all 7 days</span>
+      <!-- Tab switcher -->
+      <div role="tablist" aria-label="What makes Inspire Academy loved" class="inline-flex flex-wrap gap-1.5 rounded-full bg-white p-1.5 shadow-lg shadow-indigo-900/10 mb-8">
+        <button role="tab" aria-selected="true" data-tab="t1" class="tab-btn active rounded-full px-4 md:px-5 py-2 text-xs md:text-sm font-bold inline-flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4"></i> Skilled Teachers</button>
+        <button role="tab" aria-selected="false" data-tab="t2" class="tab-btn rounded-full px-4 md:px-5 py-2 text-xs md:text-sm font-bold inline-flex items-center gap-1.5"><i data-lucide="heart-handshake" class="w-4 h-4"></i> Encouraging Space</button>
+        <button role="tab" aria-selected="false" data-tab="t3" class="tab-btn rounded-full px-4 md:px-5 py-2 text-xs md:text-sm font-bold inline-flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4"></i> Proven Trust</button>
       </div>
 
-      <div class="reveal mt-9 grid grid-cols-3 max-w-lg divide-x divide-white/10 border-y border-white/10">
-        <div class="py-5 pr-4">
-          <div class="font-display font-black text-3xl sm:text-4xl text-volt"><span data-count="4.9" data-dec="1">0</span></div>
-          <div class="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1">Google rating</div>
+      <!-- Panels -->
+      <div class="min-h-[300px] md:min-h-[280px]">
+        <div id="t1" role="tabpanel" class="tab-panel active">
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Mentor-led coaching · named in reviews</p>
+          <h1 class="font-display font-extrabold text-[2.6rem] leading-[1.04] md:text-6xl md:leading-[1.02] tracking-tight text-[var(--ink)]">
+            Teachers who <span class="relative inline-block">inspire<svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 120 12" fill="none" preserveAspectRatio="none"><path d="M2 9 Q 32 2 60 7 T 118 5" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/></svg></span> you to be your best.
+          </h1>
+          <p class="mt-5 text-base md:text-lg text-indigo-950/70 leading-relaxed max-w-xl">
+            Students name our teachers in their Google reviews — educated, experienced and endlessly patient. <span class="font-semibold text-indigo-950">Manisha Ma'am</span> is praised by name for always finding a way to teach.
+          </p>
+          <p class="mt-4 inline-flex items-start gap-2 rounded-2xl bg-[var(--amber-soft)] px-4 py-3 text-sm font-semibold text-amber-900">
+            <i data-lucide="quote" class="w-4 h-4 mt-0.5"></i> “She's really REALLY good at her work.” — Harsimran, Google review
+          </p>
         </div>
-        <div class="py-5 px-4">
-          <div class="font-display font-black text-3xl sm:text-4xl"><span data-count="106">0</span>+</div>
-          <div class="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1">Member reviews</div>
+        <div id="t2" role="tabpanel" class="tab-panel">
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Environment students &amp; parents praise</p>
+          <h1 class="font-display font-extrabold text-[2.6rem] leading-[1.04] md:text-6xl md:leading-[1.02] tracking-tight text-[var(--ink)]">
+            “A very good place for <span class="relative inline-block">study<svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 120 12" fill="none" preserveAspectRatio="none"><path d="M2 9 Q 32 2 60 7 T 118 5" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/></svg></span> — and a good environment.”
+          </h1>
+          <p class="mt-5 text-base md:text-lg text-indigo-950/70 leading-relaxed max-w-xl">
+            That's a parent's words on our Google listing, not ours. Reviews highlight faculties who are helpful, communication that's easy to understand, and encouragement in every class.
+          </p>
+          <p class="mt-4 inline-flex items-start gap-2 rounded-2xl bg-[var(--amber-soft)] px-4 py-3 text-sm font-semibold text-amber-900">
+            <i data-lucide="quote" class="w-4 h-4 mt-0.5"></i> “So I prefer every child to experience this academy facilities.” — Parent, Google review
+          </p>
         </div>
-        <div class="py-5 pl-4">
-          <div class="font-display font-black text-3xl sm:text-4xl"><span data-count="16">0</span>h</div>
-          <div class="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1">Open daily</div>
+        <div id="t3" role="tabpanel" class="tab-panel">
+          <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Verified on Google</p>
+          <h1 class="font-display font-extrabold text-[2.6rem] leading-[1.04] md:text-6xl md:leading-[1.02] tracking-tight text-[var(--ink)]">
+            Shahdara's trusted centre — rated <span class="relative inline-block text-[var(--indigo)]">4.8★<svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 120 12" fill="none" preserveAspectRatio="none"><path d="M2 9 Q 32 2 60 7 T 118 5" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/></svg></span> on Google.
+          </h1>
+          <p class="mt-5 text-base md:text-lg text-indigo-950/70 leading-relaxed max-w-xl">
+            69 students and parents have rated Inspire Academy. Their top themes: skilled teachers, encouraging mentors and the academy itself — mentioned 8 times.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-white shadow px-3 py-1.5 text-xs font-bold text-indigo-950/75">the academy · 8 mentions</span>
+            <span class="rounded-full bg-white shadow px-3 py-1.5 text-xs font-bold text-indigo-950/75">skilled teachers</span>
+            <span class="rounded-full bg-white shadow px-3 py-1.5 text-xs font-bold text-indigo-950/75">encouraging students</span>
+            <span class="rounded-full bg-white shadow px-3 py-1.5 text-xs font-bold text-indigo-950/75">+6 more themes</span>
+          </div>
         </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <button data-open-modal class="btn btn-primary inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-bold">
+          Enquire for Admission <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+        <a href="tel:+919716692702" class="btn btn-outline inline-flex items-center gap-2 rounded-full px-6 py-3 font-bold">
+          <i data-lucide="phone" class="w-4 h-4"></i> 097166 92702
+        </a>
+      </div>
+      <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-indigo-950/60">
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-[var(--indigo)]"></i> Open · Closes 9 PM</span>
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-[var(--indigo)]"></i> 1/2239, Shanti Building, Ram Nagar</span>
       </div>
     </div>
 
-    <!-- RIGHT : GLASS WHATSAPP FORM -->
-    <div id="join" class="reveal relative scroll-mt-28">
-      <div class="float-slow absolute -top-6 -right-3 sm:-right-6 z-10 bg-volt text-[#07080a] font-display font-extrabold italic uppercase text-xs px-4 py-2.5 rounded-full rotate-3 shadow-[0_10px_30px_-8px_rgba(212,249,58,.6)]">
-        Free trial · Limited slots
+    <!-- Right : visual collage -->
+    <div class="relative mx-auto w-full max-w-md lg:max-w-none lg:pr-6">
+      <div class="absolute -inset-6 md:-inset-10 bg-[var(--amber)]/25 rounded-[3rem] rotate-3"></div>
+      <div class="absolute -inset-6 md:-inset-10 border-2 border-dashed border-indigo-300/70 rounded-[3rem] -rotate-2"></div>
+      <figure class="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-indigo-950/25 rotate-2 border-4 border-white">
+        <img src="https://images.pexels.com/photos/37758542/pexels-photo-37758542.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=820"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/inspire32-hero/820/1000'"
+             alt="Students studying attentively in a classroom (illustrative photo)" class="w-full h-[420px] md:h-[520px] object-cover" loading="eager">
+        <div class="absolute inset-0 bg-gradient-to-t from-indigo-950/45 via-transparent to-transparent"></div>
+        <figcaption class="absolute bottom-4 left-4 right-4 text-white text-xs font-semibold flex items-center gap-2">
+          <i data-lucide="book-open" class="w-4 h-4"></i> Focused learning, the way reviews describe it
+        </figcaption>
+      </figure>
+
+      <figure class="absolute -bottom-10 -left-6 md:-left-12 w-40 md:w-52 rounded-2xl overflow-hidden shadow-xl shadow-indigo-950/25 -rotate-3 border-4 border-white hidden sm:block">
+        <img src="https://images.pexels.com/photos/34079281/pexels-photo-34079281.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=560&w=700"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/inspire32-notes/700/560'"
+             alt="Handwritten study notes in an open notebook (illustrative photo)" class="w-full h-28 md:h-36 object-cover" loading="lazy">
+      </figure>
+
+      <div class="chip-ghost absolute -top-5 -left-3 md:-left-8 rounded-2xl shadow-lg shadow-indigo-950/15 px-4 py-3 -rotate-2">
+        <div class="flex items-center gap-1">
+          <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
+          <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
+        </div>
+        <p class="font-display font-bold text-sm mt-1">4.8 · 69 reviews</p>
       </div>
-      <form id="waForm" class="glass-strong rounded-3xl p-7 sm:p-9 relative shadow-[0_40px_80px_-30px_rgba(0,0,0,.9)]">
-        <div class="flex items-center gap-3">
-          <span class="w-11 h-11 rounded-2xl bg-volt/15 border border-volt/30 flex items-center justify-center">
-            <i data-lucide="message-circle" class="w-5 h-5 text-volt"></i>
-          </span>
-          <div>
-            <h2 class="font-display font-extrabold italic uppercase text-xl leading-none">Start Free Trial</h2>
-            <p class="text-[12px] text-zinc-400 mt-1">Enquiry opens directly in WhatsApp — instant reply.</p>
-          </div>
-        </div>
 
-        <div class="mt-7 space-y-4">
-          <div>
-            <label for="fName" class="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-semibold">Your name</label>
-            <input id="fName" type="text" required autocomplete="name" placeholder="e.g. Rahul Sharma" class="field mt-2 w-full rounded-xl px-4 py-3.5 text-sm placeholder:text-zinc-600">
-          </div>
-          <div>
-            <label for="fPhone" class="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-semibold">Phone number</label>
-            <input id="fPhone" type="tel" required autocomplete="tel" placeholder="e.g. 98765 43210" class="field mt-2 w-full rounded-xl px-4 py-3.5 text-sm placeholder:text-zinc-600">
-          </div>
-          <div>
-            <label for="fService" class="text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-semibold">I'm interested in</label>
-            <div class="relative mt-2">
-              <select id="fService" required class="field w-full rounded-xl px-4 py-3.5 text-sm appearance-none cursor-pointer">
-                <option value="a Free Trial Session" selected>Free Trial Session</option>
-                <option value="Strength &amp; Conditioning">Strength &amp; Conditioning</option>
-                <option value="Certified Personal Training">Certified Personal Training</option>
-                <option value="High-Energy Group Classes">High-Energy Group Classes</option>
-                <option value="Membership plans &amp; fees">Membership Plans &amp; Fees</option>
-              </select>
-              <i data-lucide="chevron-down" class="w-4 h-4 text-volt absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
-            </div>
-          </div>
-        </div>
+      <div class="chip-ghost absolute -bottom-6 right-4 md:right-10 rounded-full shadow-lg shadow-indigo-950/15 px-4 py-2.5 flex items-center gap-2 rotate-1">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        <span class="text-xs md:text-sm font-bold">Open · Closes 9 PM today</span>
+      </div>
 
-        <button type="submit" id="waSubmit" class="group mt-7 w-full inline-flex items-center justify-center gap-2.5 bg-volt text-[#07080a] font-display font-extrabold uppercase tracking-wide text-sm py-4 rounded-xl hover:brightness-110 active:scale-[0.98] transition-all duration-200 shadow-[0_18px_40px_-14px_rgba(212,249,58,.55)]">
-          <i data-lucide="send" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5"></i>
-          Send on WhatsApp
-        </button>
-        <p class="mt-4 text-center text-[11px] text-zinc-500 flex items-center justify-center gap-1.5">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-volt"></i>
-          No spam, no sign-up — your enquiry opens in WhatsApp directly.
-        </p>
-      </form>
+      <div class="chip-ghost absolute top-[38%] -right-4 md:-right-10 rounded-2xl shadow-lg shadow-indigo-950/15 px-4 py-3 max-w-[190px] rotate-2 hidden lg:block">
+        <i data-lucide="quote" class="w-4 h-4 text-[var(--indigo)]"></i>
+        <p class="text-xs font-semibold leading-snug mt-1">“…inspires us to be our best.”</p>
+        <p class="text-[10px] text-indigo-950/50 font-bold mt-1">GOOGLE REVIEW</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
-<div class="relative overflow-hidden bg-volt -rotate-1 scale-[1.02] my-2 select-none">
-  <div class="marquee-track py-3.5 text-[#07080a]">
-    <div class="flex items-center gap-10 pr-10 font-display font-black italic uppercase tracking-tight text-lg sm:text-xl whitespace-nowrap">
-      <span>Strength</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Consistency</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>शक्ति</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Community</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>4.9★ Rated</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>अनुशासन</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Shahdara · Delhi</span><i data-lucide="zap" class="w-5 h-5"></i>
+<!-- MARQUEE -->
+<div class="bg-[var(--ink)] text-[var(--paper)] py-3.5 overflow-hidden relative" aria-hidden="true">
+  <div class="marquee gap-8 items-center">
+    <div class="flex items-center gap-8 pr-8">
+      <span class="flex items-center gap-2 font-display font-bold text-sm tracking-wide"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i> 4.8 ON GOOGLE</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">इंस्पायर अकादमी</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">SKILLED TEACHERS</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">ENCOURAGING ENVIRONMENT</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">RAM NAGAR · SHAHDARA</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">OPEN TILL 9 PM</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">69 VERIFIED REVIEWS</span><span class="sep"></span>
     </div>
-    <div class="flex items-center gap-10 pr-10 font-display font-black italic uppercase tracking-tight text-lg sm:text-xl whitespace-nowrap" aria-hidden="true">
-      <span>Strength</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Consistency</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>शक्ति</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Community</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>4.9★ Rated</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>अनुशासन</span><i data-lucide="zap" class="w-5 h-5"></i>
-      <span>Shahdara · Delhi</span><i data-lucide="zap" class="w-5 h-5"></i>
+    <div class="flex items-center gap-8 pr-8">
+      <span class="flex items-center gap-2 font-display font-bold text-sm tracking-wide"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i> 4.8 ON GOOGLE</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">इंस्पायर अकादमी</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">SKILLED TEACHERS</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">ENCOURAGING ENVIRONMENT</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">RAM NAGAR · SHAHDARA</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">OPEN TILL 9 PM</span><span class="sep"></span>
+      <span class="font-display font-bold text-sm tracking-wide">69 VERIFIED REVIEWS</span><span class="sep"></span>
     </div>
   </div>
 </div>
 
-<!-- ============ SERVICES (3 CARDS) ============ -->
-<section id="services" class="relative grid-bg py-24 lg:py-32 scroll-mt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
-      <div>
-        <p class="reveal text-volt font-display font-extrabold italic uppercase tracking-[0.3em] text-xs">What we offer</p>
-        <h2 class="reveal font-display font-black italic uppercase tracking-tight leading-[0.95] text-[clamp(2.2rem,5vw,4rem)] mt-4">
-          Programs built<br>for <span class="text-volt">progress</span>
-        </h2>
+<!-- RESULTS / VERIFIED STATS BAND -->
+<section id="results" class="bg-[#171348] text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.07]" style="background-image:linear-gradient(to right,#fff 1px,transparent 1px),linear-gradient(to bottom,#fff 1px,transparent 1px);background-size:34px 34px"></div>
+  <div class="absolute -top-32 left-1/3 w-96 h-96 rounded-full bg-amber-500/25 blur-[120px]"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 relative">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-10 reveal">
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl tracking-tight">Numbers we didn't write — <span class="text-amber-400">Google did.</span></h2>
+      <p class="text-sm text-indigo-200/80 font-medium max-w-sm">Every figure below comes straight from Inspire Academy's public Google listing.</p>
+    </div>
+    <div class="stats reveal grid grid-cols-2 lg:grid-cols-4 gap-y-10">
+      <div class="cell lg:border-r border-white/10 px-2 lg:px-8">
+        <p class="num font-display font-extrabold text-6xl md:text-7xl text-amber-400 leading-none">4.8<span class="text-2xl md:text-3xl align-top text-indigo-200">/5</span></p>
+        <p class="mt-3 font-bold">Google rating</p>
+        <p class="text-sm text-indigo-200/70">as listed publicly</p>
       </div>
-      <p class="reveal max-w-sm text-sm text-zinc-400 leading-relaxed">
-        Everything a beginner or a serious lifter needs — on one clean, air-cooled, well-maintained floor in Durgapuri Extension.
+      <div class="cell lg:border-r border-white/10 px-2 lg:px-8">
+        <p class="num font-display font-extrabold text-6xl md:text-7xl leading-none">69</p>
+        <p class="mt-3 font-bold">Verified reviews</p>
+        <p class="text-sm text-indigo-200/70">from students &amp; parents</p>
+      </div>
+      <div class="cell lg:border-r border-white/10 px-2 lg:px-8">
+        <p class="num font-display font-extrabold text-6xl md:text-7xl leading-none">9<span class="text-2xl md:text-3xl align-top text-indigo-200">PM</span></p>
+        <p class="mt-3 font-bold">Open till late</p>
+        <p class="text-sm text-indigo-200/70">“Open · Closes 9 pm” — listing</p>
+      </div>
+      <div class="cell px-2 lg:px-8">
+        <p class="num font-display font-extrabold text-6xl md:text-7xl text-amber-400 leading-none">10</p>
+        <p class="mt-3 font-bold">Themes students praise</p>
+        <p class="text-sm text-indigo-200/70">in review topics on Google</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="relative reveal order-2 lg:order-1">
+      <div class="absolute -inset-4 bg-[var(--amber)]/25 rounded-[2.5rem] -rotate-2"></div>
+      <figure class="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-indigo-950/20 border-4 border-white rotate-1">
+        <img src="https://images.pexels.com/photos/5905959/pexels-photo-5905959.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=860&w=1140"
+             onerror="this.onerror=null;this.src='https://picsum.photos/seed/inspire32-class/1140/860'"
+             alt="School students writing notes during a lesson (illustrative photo)" class="w-full h-[340px] md:h-[440px] object-cover" loading="lazy">
+      </figure>
+      <div class="chip-ghost absolute -bottom-6 left-6 rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3">
+        <span class="w-11 h-11 rounded-2xl bg-[var(--amber)] grid place-items-center"><i data-lucide="landmark" class="w-5 h-5 text-[var(--ink)]"></i></span>
+        <div>
+          <p class="font-display font-bold leading-tight">Shanti Building, Ram Nagar</p>
+          <p class="text-xs font-semibold text-indigo-950/60">Shahdara, Delhi 110032</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">About the academy</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-[1.05]">A coaching centre that <span class="text-[var(--indigo)]">stands for its name.</span></h2>
+      <p class="mt-5 text-indigo-950/70 leading-relaxed">
+        “Well the academy stands for its name,” writes Harsimran in her Google review — and she's not alone. Students describe Inspire Academy as a place where teachers are educated, experienced and genuinely encouraging, and where every child is pushed to be their best.
       </p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- CARD 1 -->
-      <article class="reveal glass rounded-3xl overflow-hidden group hover:border-volt/50 hover:-translate-y-2 transition-all duration-500 flex flex-col">
-        <div class="img-zoom relative h-56 overflow-hidden">
-          <img src="https://images.pexels.com/photos/4853280/pexels-photo-4853280.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Deadlift session on the strength floor" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c0e] via-transparent to-transparent"></div>
-          <span class="absolute top-4 left-4 font-display font-black italic text-4xl text-white/20 group-hover:text-volt/70 transition-colors duration-500">01</span>
-          <span class="absolute bottom-4 left-4 w-10 h-10 rounded-xl bg-volt flex items-center justify-center">
-            <i data-lucide="dumbbell" class="w-5 h-5 text-[#07080a]"></i>
-          </span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <h3 class="font-display font-extrabold italic uppercase text-xl tracking-tight">Strength &amp; Conditioning</h3>
-          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">A full free-weight and machine floor with modern, well-maintained equipment — members consistently call it the best-kept setup in the area.</p>
-          <ul class="mt-5 space-y-2.5 text-[13px] text-zinc-300">
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Modern, well-maintained machines</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Free weights, racks &amp; cable stations</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Program guidance on the floor</li>
-          </ul>
-          <button data-service="Strength &amp; Conditioning" class="service-cta mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-left text-sm font-semibold text-white hover:text-volt transition-colors group/btn">
-            Enquire about this
-            <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
-          </button>
-        </div>
-      </article>
-
-      <!-- CARD 2 -->
-      <article class="reveal glass rounded-3xl overflow-hidden group hover:border-volt/50 hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay:.08s">
-        <div class="img-zoom relative h-56 overflow-hidden">
-          <img src="https://images.pexels.com/photos/6455906/pexels-photo-6455906.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Certified trainer coaching a member with dumbbells" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c0e] via-transparent to-transparent"></div>
-          <span class="absolute top-4 left-4 font-display font-black italic text-4xl text-white/20 group-hover:text-volt/70 transition-colors duration-500">02</span>
-          <span class="absolute bottom-4 left-4 w-10 h-10 rounded-xl bg-volt flex items-center justify-center">
-            <i data-lucide="badge-check" class="w-5 h-5 text-[#07080a]"></i>
-          </span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <h3 class="font-display font-extrabold italic uppercase text-xl tracking-tight">Certified Personal Training</h3>
-          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">One-on-one coaching from trainers reviewers call "incredibly knowledgeable" — supportive, professional, and always watching your form.</p>
-          <ul class="mt-5 space-y-2.5 text-[13px] text-zinc-300">
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Certified &amp; supportive trainers</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Custom workout &amp; diet guidance</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Form correction every session</li>
-          </ul>
-          <button data-service="Certified Personal Training" class="service-cta mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-left text-sm font-semibold text-white hover:text-volt transition-colors group/btn">
-            Enquire about this
-            <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
-          </button>
-        </div>
-      </article>
-
-      <!-- CARD 3 -->
-      <article class="reveal glass rounded-3xl overflow-hidden group hover:border-volt/50 hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay:.16s">
-        <div class="img-zoom relative h-56 overflow-hidden">
-          <img src="https://images.pexels.com/photos/7337618/pexels-photo-7337618.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="High-energy group class in session" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c0e] via-transparent to-transparent"></div>
-          <span class="absolute top-4 left-4 font-display font-black italic text-4xl text-white/20 group-hover:text-volt/70 transition-colors duration-500">03</span>
-          <span class="absolute bottom-4 left-4 w-10 h-10 rounded-xl bg-volt flex items-center justify-center">
-            <i data-lucide="flame" class="w-5 h-5 text-[#07080a]"></i>
-          </span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <h3 class="font-display font-extrabold italic uppercase text-xl tracking-tight">High-Energy Group Classes</h3>
-          <p class="mt-3 text-sm text-zinc-400 leading-relaxed">Coach-led batches that members describe as genuinely high-energy — a motivating crowd that pushes you past your comfort zone, together.</p>
-          <ul class="mt-5 space-y-2.5 text-[13px] text-zinc-300">
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Morning &amp; evening batches</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Friendly crowd, zero judgement</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-volt shrink-0"></i>Beginner to advanced scaling</li>
-          </ul>
-          <button data-service="High-Energy Group Classes" class="service-cta mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-left text-sm font-semibold text-white hover:text-volt transition-colors group/btn">
-            Enquire about this
-            <i data-lucide="arrow-up-right" class="w-4 h-4 text-volt transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"></i>
-          </button>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FEATURE PILLARS (4 COL) ============ -->
-<section id="why" class="relative py-24 lg:py-32 border-t border-white/5 scroll-mt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <p class="reveal text-volt font-display font-extrabold italic uppercase tracking-[0.3em] text-xs">Why Fit Generation</p>
-      <h2 class="reveal font-display font-black italic uppercase tracking-tight leading-[0.95] text-[clamp(2.2rem,5vw,4rem)] mt-4">Built on what<br>members <span class="text-volt">love</span></h2>
-      <p class="reveal mt-5 text-sm text-zinc-400 leading-relaxed">Summarised straight from 106 Google reviews — the four things people mention again and again.</p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="reveal glass rounded-3xl p-7 hover:-translate-y-2 hover:border-volt/50 transition-all duration-500 group">
-        <div class="flex items-center justify-between">
-          <span class="w-12 h-12 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center group-hover:bg-volt transition-colors duration-500">
-            <i data-lucide="cog" class="w-6 h-6 text-volt group-hover:text-[#07080a] transition-colors duration-500"></i>
-          </span>
-          <span class="font-display font-black italic text-2xl text-white/10">01</span>
-        </div>
-        <h3 class="font-display font-extrabold italic uppercase text-lg mt-6 tracking-tight">Modern Equipment</h3>
-        <p class="mt-3 text-[13px] text-zinc-400 leading-relaxed">Machines and free weights kept in top condition — "modern and well-maintained" is the most repeated phrase in our reviews.</p>
-      </div>
-
-      <div class="reveal glass rounded-3xl p-7 hover:-translate-y-2 hover:border-volt/50 transition-all duration-500 group" style="transition-delay:.07s">
-        <div class="flex items-center justify-between">
-          <span class="w-12 h-12 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center group-hover:bg-volt transition-colors duration-500">
-            <i data-lucide="graduation-cap" class="w-6 h-6 text-volt group-hover:text-[#07080a] transition-colors duration-500"></i>
-          </span>
-          <span class="font-display font-black italic text-2xl text-white/10">02</span>
-        </div>
-        <h3 class="font-display font-extrabold italic uppercase text-lg mt-6 tracking-tight">Certified Trainers</h3>
-        <p class="mt-3 text-[13px] text-zinc-400 leading-relaxed">Supportive, knowledgeable coaches who give professional guidance — whether it's your first day or your five-hundredth.</p>
-      </div>
-
-      <div class="reveal glass rounded-3xl p-7 hover:-translate-y-2 hover:border-volt/50 transition-all duration-500 group" style="transition-delay:.14s">
-        <div class="flex items-center justify-between">
-          <span class="w-12 h-12 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center group-hover:bg-volt transition-colors duration-500">
-            <i data-lucide="sparkles" class="w-6 h-6 text-volt group-hover:text-[#07080a] transition-colors duration-500"></i>
-          </span>
-          <span class="font-display font-black italic text-2xl text-white/10">03</span>
-        </div>
-        <h3 class="font-display font-extrabold italic uppercase text-lg mt-6 tracking-tight">Clean &amp; Spacious</h3>
-        <p class="mt-3 text-[13px] text-zinc-400 leading-relaxed">A clean, comfortable environment with real room to work out — no crowding around machines, no waiting forever for a bench.</p>
-      </div>
-
-      <div class="reveal glass rounded-3xl p-7 hover:-translate-y-2 hover:border-volt/50 transition-all duration-500 group" style="transition-delay:.21s">
-        <div class="flex items-center justify-between">
-          <span class="w-12 h-12 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center group-hover:bg-volt transition-colors duration-500">
-            <i data-lucide="users" class="w-6 h-6 text-volt group-hover:text-[#07080a] transition-colors duration-500"></i>
-          </span>
-          <span class="font-display font-black italic text-2xl text-white/10">04</span>
-        </div>
-        <h3 class="font-display font-extrabold italic uppercase text-lg mt-6 tracking-tight">Motivating Community</h3>
-        <p class="mt-3 text-[13px] text-zinc-400 leading-relaxed">A positive, friendly crowd and an atmosphere of ambition — suitable for beginners and serious fitness enthusiasts alike.</p>
-      </div>
-    </div>
-
-    <!-- PHOTO STRIP -->
-    <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-5">
-      <div class="reveal img-zoom rounded-3xl overflow-hidden h-52 glass group">
-        <img src="https://images.pexels.com/photos/3916766/pexels-photo-3916766.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Heavy dumbbell rack at the facility" class="w-full h-full object-cover" loading="lazy">
-      </div>
-      <div class="reveal img-zoom rounded-3xl overflow-hidden h-52 glass group" style="transition-delay:.08s">
-        <img src="https://images.pexels.com/photos/37677569/pexels-photo-37677569.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Group class working on core strength" class="w-full h-full object-cover" loading="lazy">
-      </div>
-      <div class="reveal img-zoom rounded-3xl overflow-hidden h-52 glass group" style="transition-delay:.16s">
-        <img src="https://images.pexels.com/photos/7697693/pexels-photo-7697693.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Trainer discussing a plan with a member" class="w-full h-full object-cover" loading="lazy">
+      <p class="mt-4 text-indigo-950/70 leading-relaxed">
+        Located at Shanti Building on Ram Nagar's familiar streets in Shahdara, the centre keeps its doors open till 9 PM — so learning fits around the school day.
+      </p>
+      <ul class="mt-7 space-y-3.5">
+        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 grid place-items-center mt-0.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i></span><span class="font-semibold text-indigo-950/85">Teachers praised by name — like Manisha Ma'am</span></li>
+        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 grid place-items-center mt-0.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i></span><span class="font-semibold text-indigo-950/85">“Helpful, understandable, well communication” — reviewer</span></li>
+        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 grid place-items-center mt-0.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i></span><span class="font-semibold text-indigo-950/85">Recommended by parents “for every child”</span></li>
+        <li class="flex items-start gap-3"><span class="w-6 h-6 rounded-full bg-emerald-100 grid place-items-center mt-0.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i></span><span class="font-semibold text-indigo-950/85">Students stay for years — one reviewed a 2-year journey</span></li>
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <button data-open-modal class="btn btn-primary inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-bold">Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+        <a href="#reviews" class="btn btn-outline inline-flex items-center gap-2 rounded-full px-6 py-3 font-bold">Read the reviews</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SOCIAL PROOF / REVIEWS ============ -->
-<section id="reviews" class="relative grid-bg py-24 lg:py-32 border-t border-white/5 scroll-mt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="grid lg:grid-cols-[380px_1fr] gap-10 lg:gap-14">
-      <!-- SUMMARY COLUMN -->
-      <div>
-        <p class="reveal text-volt font-display font-extrabold italic uppercase tracking-[0.3em] text-xs">Social proof</p>
-        <h2 class="reveal font-display font-black italic uppercase tracking-tight leading-[0.95] text-[clamp(2.2rem,4.5vw,3.4rem)] mt-4">Rated by the<br>people who <span class="text-volt">train here</span></h2>
+<!-- CENTRE INFO TABLE -->
+<section id="info" class="py-20 md:py-28 bg-white/60 border-y border-indigo-100">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+      <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Centre information</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight">Everything you need — <span class="text-[var(--indigo)]">verified.</span></h2>
+      <p class="mt-4 text-indigo-950/65">No invented promises here. These are the exact details from Inspire Academy's public listing — with one-tap actions.</p>
+    </div>
+    <div class="reveal">
+      <table class="info-table w-full md:bg-white md:rounded-[1.75rem] md:shadow-[0_24px_60px_-30px_rgba(27,24,68,.3)] md:overflow-hidden text-left">
+        <thead class="text-xs uppercase tracking-[0.14em] text-indigo-950/50">
+          <tr class="border-b-2 border-indigo-100">
+            <th class="py-4 px-6 font-bold">Detail</th>
+            <th class="py-4 px-6 font-bold">Verified information</th>
+            <th class="py-4 px-6 font-bold text-right">Quick action</th>
+          </tr>
+        </thead>
+        <tbody class="md:divide-y divide-indigo-50 text-[15px]">
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-indigo-100 grid place-items-center"><i data-lucide="map-pin" class="w-4.5 h-4.5 text-[var(--indigo)]"></i></span> Address</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75">1/2239, Shanti Building, Ram Nagar, Shahdara, Delhi 110032</td>
+            <td class="py-5 px-6 md:text-right"><a href="https://www.google.com/maps/dir/?api=1&destination=Inspire+Academy,+1/2239,+Shanti+Building,+Ram+Nagar,+Shahdara,+Delhi+110032" target="_blank" rel="noopener" class="btn btn-primary inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Directions <i data-lucide="navigation" class="w-3.5 h-3.5"></i></a></td>
+          </tr>
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-amber-100 grid place-items-center"><i data-lucide="phone" class="w-4.5 h-4.5 text-amber-600"></i></span> Phone</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75">097166 92702 — admissions &amp; enquiries</td>
+            <td class="py-5 px-6 md:text-right"><a href="tel:+919716692702" class="btn btn-amber inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Call now <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></a></td>
+          </tr>
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-emerald-100 grid place-items-center"><i data-lucide="clock" class="w-4.5 h-4.5 text-emerald-600"></i></span> Hours</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75">Open · Closes 9 PM <span class="text-indigo-950/45">(as listed on Google)</span></td>
+            <td class="py-5 px-6 md:text-right"><button data-open-modal class="btn btn-outline inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Enquire <i data-lucide="message-circle" class="w-3.5 h-3.5"></i></button></td>
+          </tr>
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-indigo-100 grid place-items-center"><i data-lucide="hash" class="w-4.5 h-4.5 text-[var(--indigo)]"></i></span> Plus Code</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75">M7JW+FJ Shahdara, Delhi — paste it in Google Maps</td>
+            <td class="py-5 px-6 md:text-right"><a href="https://www.google.com/maps/search/?api=1&query=M7JW%2BFJ+Shahdara+Delhi" target="_blank" rel="noopener" class="btn btn-primary inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Open in Maps <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></a></td>
+          </tr>
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-amber-100 grid place-items-center"><i data-lucide="star" class="w-4.5 h-4.5 text-amber-600"></i></span> Rating</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75"><span class="font-display font-extrabold text-lg text-[var(--ink)]">4.8</span> out of 5 · 69 Google reviews</td>
+            <td class="py-5 px-6 md:text-right"><a href="https://www.google.com/maps/search/?api=1&query=Inspire+Academy+Shanti+Building+Ram+Nagar+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="btn btn-amber inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Read on Google <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></a></td>
+          </tr>
+          <tr>
+            <td class="py-5 px-6 font-bold"><span class="inline-flex items-center gap-2.5"><span class="w-9 h-9 rounded-xl bg-indigo-100 grid place-items-center"><i data-lucide="book-open" class="w-4.5 h-4.5 text-[var(--indigo)]"></i></span> Category</span></td>
+            <td class="py-5 px-6 font-medium text-indigo-950/75">Coaching Center — listed on Google Maps</td>
+            <td class="py-5 px-6 md:text-right"><a href="https://www.google.com/maps/search/?api=1&query=Inspire+Academy+Shanti+Building+Ram+Nagar+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="btn btn-outline inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold">Suggest an edit <i data-lucide="pen-line" class="w-3.5 h-3.5"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-        <div class="reveal glass-strong rounded-3xl p-7 mt-8">
-          <div class="flex items-end gap-4">
-            <span class="font-display font-black italic text-7xl leading-none text-volt">4.9</span>
-            <div class="pb-1.5">
-              <div class="stars flex gap-1 text-volt">
-                <i data-lucide="star" class="w-4.5 h-4.5"></i><i data-lucide="star" class="w-4.5 h-4.5"></i><i data-lucide="star" class="w-4.5 h-4.5"></i><i data-lucide="star" class="w-4.5 h-4.5"></i><i data-lucide="star" class="w-4.5 h-4.5"></i>
-              </div>
-              <p class="text-[12px] text-zinc-400 mt-1.5">106 Google reviews</p>
-            </div>
+<!-- MENTORS / PRAISE ROW -->
+<section id="mentors" class="py-20 md:py-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
+      <div class="max-w-2xl">
+        <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Mentors &amp; praise</p>
+        <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-[1.05]">The people behind the <span class="text-[var(--indigo)]">4.8 stars.</span></h2>
+        <p class="mt-4 text-indigo-950/65">We don't publish teacher photos — instead, here are the mentors and qualities students describe, in their own verified words.</p>
+      </div>
+      <div class="flex gap-3">
+        <button id="prevCard" aria-label="Scroll left" class="btn btn-outline w-12 h-12 rounded-full grid place-items-center"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+        <button id="nextCard" aria-label="Scroll right" class="btn btn-primary w-12 h-12 rounded-full grid place-items-center"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="reveal">
+    <div id="snapRow" class="snap-row snap-pad flex gap-6 overflow-x-auto pb-6 pt-2">
+
+      <article class="card card-hover min-w-[86%] sm:min-w-[400px] p-7 relative">
+        <span class="absolute top-6 right-6 rounded-full bg-[var(--amber-soft)] text-amber-800 text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5">Named in reviews</span>
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--indigo)] to-indigo-800 text-white grid place-items-center font-display font-extrabold text-2xl shadow-lg shadow-indigo-600/40">M</div>
+        <h3 class="font-display font-extrabold text-2xl mt-5">Manisha Ma'am</h3>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--indigo)] mt-1">Teaching Faculty</p>
+        <p class="mt-4 text-indigo-950/70 leading-relaxed">“Our teachers especially Manisha ma'am inspires us to be our best and always tries her best to teach us in any way possible.”</p>
+        <div class="mt-5 pt-4 border-t border-indigo-50 flex items-center justify-between text-xs font-bold text-indigo-950/50">
+          <span class="inline-flex items-center gap-1.5"><i data-lucide="quote" class="w-3.5 h-3.5"></i> Harsimran Kaur</span>
+          <span>GOOGLE REVIEW</span>
+        </div>
+      </article>
+
+      <article class="card card-hover min-w-[86%] sm:min-w-[400px] p-7 relative">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-white grid place-items-center shadow-lg shadow-amber-500/40"><i data-lucide="graduation-cap" class="w-8 h-8"></i></div>
+        <h3 class="font-display font-extrabold text-2xl mt-5">Skilled &amp; Experienced</h3>
+        <p class="text-xs font-bold uppercase tracking-widest text-amber-600 mt-1">Our faculties</p>
+        <p class="mt-4 text-indigo-950/70 leading-relaxed">“They have faculties, who are very educated, knowledge and experienced. They are very helpful and understandble well communication.”</p>
+        <div class="mt-5 pt-4 border-t border-indigo-50 flex items-center justify-between text-xs font-bold text-indigo-950/50">
+          <span class="inline-flex items-center gap-1.5"><i data-lucide="quote" class="w-3.5 h-3.5"></i> Falakdeep Kaur</span>
+          <span>“skilled teachers” ×2 MENTIONS</span>
+        </div>
+      </article>
+
+      <article class="card card-hover min-w-[86%] sm:min-w-[400px] p-7 relative">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-400 to-[var(--indigo)] text-white grid place-items-center shadow-lg shadow-indigo-500/40"><i data-lucide="heart-handshake" class="w-8 h-8"></i></div>
+        <h3 class="font-display font-extrabold text-2xl mt-5">Encouraging Mentors</h3>
+        <p class="text-xs font-bold uppercase tracking-widest text-[var(--indigo)] mt-1">How they teach</p>
+        <p class="mt-4 text-indigo-950/70 leading-relaxed">“She inspires us to be our best and always tries her best to teach us in any way possible. Well everyone's nice here.”</p>
+        <div class="mt-5 pt-4 border-t border-indigo-50 flex items-center justify-between text-xs font-bold text-indigo-950/50">
+          <span class="inline-flex items-center gap-1.5"><i data-lucide="quote" class="w-3.5 h-3.5"></i> Student review</span>
+          <span>“encouraging students” ×2</span>
+        </div>
+      </article>
+
+      <article class="card card-hover min-w-[86%] sm:min-w-[400px] p-7 relative">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-white grid place-items-center shadow-lg shadow-emerald-500/40"><i data-lucide="book-open" class="w-8 h-8"></i></div>
+        <h3 class="font-display font-extrabold text-2xl mt-5">Calm Study Space</h3>
+        <p class="text-xs font-bold uppercase tracking-widest text-emerald-600 mt-1">The environment</p>
+        <p class="mt-4 text-indigo-950/70 leading-relaxed">“A very good place for study and also a good environment.”</p>
+        <div class="mt-5 pt-4 border-t border-indigo-50 flex items-center justify-between text-xs font-bold text-indigo-950/50">
+          <span class="inline-flex items-center gap-1.5"><i data-lucide="quote" class="w-3.5 h-3.5"></i> Review summary</span>
+          <span>“the academy” ×8 MENTIONS</span>
+        </div>
+      </article>
+
+      <article class="card card-hover min-w-[86%] sm:min-w-[400px] p-7 relative">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[var(--ink)] to-indigo-950 text-amber-400 grid place-items-center shadow-lg shadow-indigo-950/40"><i data-lucide="award" class="w-8 h-8"></i></div>
+        <h3 class="font-display font-extrabold text-2xl mt-5">Years-Long Journeys</h3>
+        <p class="text-xs font-bold uppercase tracking-widest text-amber-600 mt-1">Students stay</p>
+        <p class="mt-4 text-indigo-950/70 leading-relaxed">“My journey of 2 years in Inspire Academy was very amazing and memorable.”</p>
+        <div class="mt-5 pt-4 border-t border-indigo-50 flex items-center justify-between text-xs font-bold text-indigo-950/50">
+          <span class="inline-flex items-center gap-1.5"><i data-lucide="quote" class="w-3.5 h-3.5"></i> Ashish Ronyar</span>
+          <span>GOOGLE REVIEW</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-20 md:py-28 bg-[var(--ink)] text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image:linear-gradient(to right,#fff 1px,transparent 1px),linear-gradient(to bottom,#fff 1px,transparent 1px);background-size:34px 34px"></div>
+  <div class="absolute -bottom-40 right-0 w-[30rem] h-[30rem] rounded-full bg-[var(--indigo)]/40 blur-[140px]"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+    <div class="max-w-2xl mb-12 reveal">
+      <p class="text-xs font-bold uppercase tracking-[0.22em] text-amber-400 mb-3">Reviews</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-[1.05]">69 reviews. 4.8 stars. <span class="text-amber-400">In their own words.</span></h2>
+    </div>
+    <div class="grid lg:grid-cols-[.9fr_1.4fr] gap-10">
+
+      <!-- Summary card -->
+      <div class="reveal">
+        <div class="rounded-[1.75rem] bg-white/[.06] border border-white/10 backdrop-blur p-8">
+          <p class="font-display font-extrabold text-8xl leading-none text-amber-400">4.8</p>
+          <div class="flex gap-1 mt-4">
+            <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+            <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
           </div>
-
-          <div class="mt-6 space-y-2.5">
-            <div class="flex items-center gap-3 text-[12px]"><span class="w-3 text-zinc-400">5</span><div class="flex-1 h-2 rounded-full bg-white/8 overflow-hidden"><div class="ratebar h-full rounded-full bg-volt" data-w="93" style="width:0%"></div></div><span class="w-7 text-right text-zinc-500">99</span></div>
-            <div class="flex items-center gap-3 text-[12px]"><span class="w-3 text-zinc-400">4</span><div class="flex-1 h-2 rounded-full bg-white/8 overflow-hidden"><div class="ratebar h-full rounded-full bg-volt/70" data-w="4" style="width:0%"></div></div><span class="w-7 text-right text-zinc-500">4</span></div>
-            <div class="flex items-center gap-3 text-[12px]"><span class="w-3 text-zinc-400">3</span><div class="flex-1 h-2 rounded-full bg-white/8 overflow-hidden"><div class="ratebar h-full rounded-full bg-volt/50" data-w="1" style="width:0%"></div></div><span class="w-7 text-right text-zinc-500">1</span></div>
-            <div class="flex items-center gap-3 text-[12px]"><span class="w-3 text-zinc-400">2</span><div class="flex-1 h-2 rounded-full bg-white/8 overflow-hidden"><div class="ratebar h-full rounded-full bg-volt/40" data-w="1" style="width:0%"></div></div><span class="w-7 text-right text-zinc-500">1</span></div>
-            <div class="flex items-center gap-3 text-[12px]"><span class="w-3 text-zinc-400">1</span><div class="flex-1 h-2 rounded-full bg-white/8 overflow-hidden"><div class="ratebar h-full rounded-full bg-volt/30" data-w="1" style="width:0%"></div></div><span class="w-7 text-right text-zinc-500">1</span></div>
-          </div>
-
-          <div class="mt-7">
-            <p class="text-[11px] uppercase tracking-[0.2em] text-zinc-500 font-semibold mb-3">People mention most</p>
+          <p class="mt-3 font-semibold text-indigo-100/80">From 69 reviews on the academy's Google listing</p>
+          <div class="mt-6 pt-6 border-t border-white/10">
+            <p class="text-xs font-bold uppercase tracking-widest text-indigo-100/50 mb-3">What reviewers talk about</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-[12px] px-3 py-1.5 rounded-full border border-volt/40 text-volt bg-volt/8">supportive trainers <span class="text-zinc-400">7</span></span>
-              <span class="text-[12px] px-3 py-1.5 rounded-full border border-white/12 text-zinc-300">certified trainer <span class="text-zinc-500">6</span></span>
-              <span class="text-[12px] px-3 py-1.5 rounded-full border border-white/12 text-zinc-300">maintained machines <span class="text-zinc-500">5</span></span>
-              <span class="text-[12px] px-3 py-1.5 rounded-full border border-white/12 text-zinc-300">friendly crowd <span class="text-zinc-500">3</span></span>
-              <span class="text-[12px] px-3 py-1.5 rounded-full border border-white/12 text-zinc-400">+6 more</span>
+              <span class="rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold">the academy · 8</span>
+              <span class="rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold">tutors · 2</span>
+              <span class="rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold">encouraging students · 2</span>
+              <span class="rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold">skilled teachers · 2</span>
+              <span class="rounded-full bg-amber-400/20 text-amber-300 px-3 py-1.5 text-xs font-bold">+6 more themes</span>
             </div>
           </div>
-
-          <div class="mt-7 pt-6 border-t border-white/10">
-            <i data-lucide="quote" class="w-5 h-5 text-volt"></i>
-            <p class="mt-3 text-[13px] text-zinc-300 leading-relaxed italic">"People say this gym has modern, well-maintained equipment and a clean, comfortable environment. The staff and trainers are supportive, knowledgeable, and provide professional guidance."</p>
-            <p class="mt-3 text-[11px] text-zinc-500">Summarised from Google reviews</p>
+          <div class="mt-7 flex flex-col gap-3">
+            <a href="https://www.google.com/maps/search/?api=1&query=Inspire+Academy+Shanti+Building+Ram+Nagar+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="btn btn-amber w-full inline-flex justify-center items-center gap-2 rounded-full px-6 py-3.5 font-bold">Read all 66 more on Google <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Inspire+Academy+Shanti+Building+Ram+Nagar+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="btn w-full inline-flex justify-center items-center gap-2 rounded-full px-6 py-3 font-bold border-2 border-white/20 text-white hover:bg-white/10">Write a review <i data-lucide="pen-line" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
 
-      <!-- REVIEW WALL -->
-      <div class="space-y-5">
-        <article class="reveal glass rounded-3xl p-7 hover:border-volt/40 transition-colors duration-500">
+      <!-- Review cards -->
+      <div class="space-y-6">
+        <article class="reveal rounded-[1.75rem] bg-white text-[var(--ink)] p-7 shadow-xl shadow-black/20">
           <div class="flex items-start justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <span class="w-11 h-11 rounded-full bg-volt text-[#07080a] font-display font-black italic text-lg flex items-center justify-center">N</span>
+              <span class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-800 text-white grid place-items-center font-display font-bold text-lg">HK</span>
               <div>
-                <p class="font-semibold text-sm">Nidhi Thukral</p>
-                <p class="text-[12px] text-zinc-500">1 review · 6 months ago</p>
+                <p class="font-display font-bold">Harsimran Kaur</p>
+                <p class="text-xs font-semibold text-indigo-950/50">2 reviews · edited 2 years ago</p>
               </div>
             </div>
-            <div class="stars flex gap-0.5 text-volt shrink-0">
-              <i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
             </div>
           </div>
-          <p class="mt-4 text-sm text-zinc-300 leading-relaxed">"Amazing gym with a great atmosphere! The equipment is modern and well-maintained, and the staff is always friendly and helpful. Highly recommend to anyone — from beginners to pros."</p>
-          <div class="mt-4 flex items-center gap-4 text-[12px] text-zinc-500">
-            <span class="flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i> Helpful</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="share-2" class="w-3.5 h-3.5"></i> Share</span>
-          </div>
-          <div class="mt-5 rounded-2xl bg-black/35 border border-white/8 p-4">
-            <p class="text-[11px] font-semibold text-zinc-400 flex items-center gap-1.5"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-volt"></i> Response from the owner · 6 months ago</p>
-            <p class="mt-1.5 text-[13px] text-zinc-300">"Thank you so much ma'am"</p>
-            <p class="mt-1 text-[11px] text-zinc-600">Translated by Google · See original (Hindi)</p>
-          </div>
+          <p class="mt-4 text-indigo-950/75 leading-relaxed">“Well the academy stands for its name … Our teachers especially Manisha maam inspires us to be our best and always tries her best to teach us in any way possible. She's really REALLY GOOD at her work. Well everyone's nice here.”</p>
+          <p class="mt-3 text-xs font-bold text-indigo-950/40 uppercase tracking-widest">Posted on Google</p>
         </article>
 
-        <article class="reveal glass rounded-3xl p-7 hover:border-volt/40 transition-colors duration-500" style="transition-delay:.08s">
+        <article class="reveal rounded-[1.75rem] bg-white text-[var(--ink)] p-7 shadow-xl shadow-black/20 lg:ml-10">
           <div class="flex items-start justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <span class="w-11 h-11 rounded-full bg-white/10 border border-white/15 text-volt font-display font-black italic text-lg flex items-center justify-center">P</span>
+              <span class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-white grid place-items-center font-display font-bold text-lg">FK</span>
               <div>
-                <p class="font-semibold text-sm">Preet Raj</p>
-                <p class="text-[12px] text-zinc-500">1 review · 1 photo · 4 months ago</p>
+                <p class="font-display font-bold">Falakdeep Kaur</p>
+                <p class="text-xs font-semibold text-indigo-950/50">Local Guide · 12 reviews · 3 years ago</p>
               </div>
             </div>
-            <div class="stars flex gap-0.5 text-volt shrink-0">
-              <i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
             </div>
           </div>
-          <p class="mt-4 text-sm text-zinc-300 leading-relaxed">"This gym carries an atmosphere of strength, ambition, and consistency. It's the kind of place where hard work speaks louder than words, and every workout session reflects determination. The environment motivates people to push past their limits."</p>
-          <div class="mt-4 flex items-center gap-4 text-[12px] text-zinc-500">
-            <span class="flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i> Helpful</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="share-2" class="w-3.5 h-3.5"></i> Share</span>
-          </div>
-          <div class="mt-5 rounded-2xl bg-black/35 border border-white/8 p-4">
-            <p class="text-[11px] font-semibold text-zinc-400 flex items-center gap-1.5"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-volt"></i> Response from the owner · 3 months ago</p>
-            <p class="mt-1.5 text-[13px] text-zinc-300">"Thank u so much sir"</p>
-          </div>
+          <p class="mt-4 text-indigo-950/75 leading-relaxed">“They have faculties, who are very educated, knowledge and experienced. They are very helpful and understandble well communication. I had a wonderful experience and I would highly recommend this to others.”</p>
+          <p class="mt-3 text-xs font-bold text-indigo-950/40 uppercase tracking-widest">Posted on Google</p>
         </article>
 
-        <article class="reveal glass rounded-3xl p-7 hover:border-volt/40 transition-colors duration-500" style="transition-delay:.16s">
+        <article class="reveal rounded-[1.75rem] bg-white text-[var(--ink)] p-7 shadow-xl shadow-black/20 lg:ml-20">
           <div class="flex items-start justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <span class="w-11 h-11 rounded-full bg-white/10 border border-white/15 text-volt font-display font-black italic text-lg flex items-center justify-center">K</span>
+              <span class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-700 text-white grid place-items-center font-display font-bold text-lg">AR</span>
               <div>
-                <p class="font-semibold text-sm">Kavyansh Oct</p>
-                <p class="text-[12px] text-zinc-500">1 review · 4 months ago</p>
+                <p class="font-display font-bold">Ashish Ronyar</p>
+                <p class="text-xs font-semibold text-indigo-950/50">2 reviews · 3 years ago</p>
               </div>
             </div>
-            <div class="stars flex gap-0.5 text-volt shrink-0">
-              <i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i>
+            <div class="flex gap-0.5">
+              <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-400"></i>
             </div>
           </div>
-          <p class="mt-4 text-sm text-zinc-300 leading-relaxed">"Going to this gym for a few months now and here's an honest review from my side — it's been a great experience. The equipment is well-maintained, the trainers actually guide you, and the crowd keeps you consistent."</p>
-          <div class="mt-4 flex items-center gap-4 text-[12px] text-zinc-500">
-            <span class="flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i> Helpful</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="share-2" class="w-3.5 h-3.5"></i> Share</span>
-          </div>
-          <div class="mt-5 rounded-2xl bg-black/35 border border-white/8 p-4">
-            <p class="text-[11px] font-semibold text-zinc-400 flex items-center gap-1.5"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-volt"></i> Response from the owner · 3 months ago</p>
-            <p class="mt-1.5 text-[13px] text-zinc-300">"Thank you sir"</p>
-            <p class="mt-1 text-[11px] text-zinc-600">Translated by Google · See original (Hindi)</p>
-          </div>
+          <p class="mt-4 text-indigo-950/75 leading-relaxed">“Hello Myself Ashish Ronyar !! My journey of 2 years in Inspire Academy was very amazing and memorable.”</p>
+          <p class="mt-3 text-xs font-bold text-indigo-950/40 uppercase tracking-widest">Posted on Google</p>
         </article>
-
-        <div class="reveal grid sm:grid-cols-2 gap-5">
-          <a href="https://www.google.com/maps/search/?api=1&query=Fit+Generation+Gym+Durgapuri+Extension+Shahdara+Delhi+110093" target="_blank" rel="noopener" class="group glass rounded-3xl p-6 flex items-center justify-between hover:border-volt/50 hover:-translate-y-1 transition-all duration-300">
-            <div>
-              <p class="font-display font-extrabold italic uppercase tracking-tight">All 103 more reviews</p>
-              <p class="text-[12px] text-zinc-500 mt-1">Read them on Google Maps</p>
-            </div>
-            <span class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center group-hover:bg-volt group-hover:border-volt transition-colors duration-300">
-              <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:text-[#07080a] transition-colors duration-300"></i>
-            </span>
-          </a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Fit+Generation+Gym+Durgapuri+Extension+Shahdara+Delhi+110093" target="_blank" rel="noopener" class="group glass rounded-3xl p-6 flex items-center justify-between hover:border-volt/50 hover:-translate-y-1 transition-all duration-300">
-            <div>
-              <p class="font-display font-extrabold italic uppercase tracking-tight">Write a review</p>
-              <p class="text-[12px] text-zinc-500 mt-1">Trained with us? Tell others</p>
-            </div>
-            <span class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center group-hover:bg-volt group-hover:border-volt transition-colors duration-300">
-              <i data-lucide="pen-line" class="w-4 h-4 group-hover:text-[#07080a] transition-colors duration-300"></i>
-            </span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ LOCATION / CONTACT ============ -->
-<section id="contact" class="relative py-24 lg:py-32 border-t border-white/5 scroll-mt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
-      <div>
-        <p class="reveal text-volt font-display font-extrabold italic uppercase tracking-[0.3em] text-xs">Find us</p>
-        <h2 class="reveal font-display font-black italic uppercase tracking-tight leading-[0.95] text-[clamp(2.2rem,5vw,4rem)] mt-4">Right on<br><span class="text-volt">100 Feet Road</span></h2>
-      </div>
-      <p class="reveal max-w-sm text-sm text-zinc-400 leading-relaxed">Two minutes from Durgapuri Chowk — serving Shahdara, Hardevpuri, Maujpur and nearby East Delhi neighbourhoods.</p>
+<!-- VISIT -->
+<section id="visit" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl mb-12 reveal">
+      <p class="text-xs font-bold uppercase tracking-[0.22em] text-[var(--indigo)] mb-3">Visit the centre</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight leading-[1.05]">Find us in <span class="text-[var(--indigo)]">Ram Nagar, Shahdara.</span></h2>
     </div>
-
-    <div class="grid lg:grid-cols-2 gap-6">
-      <!-- INFO COLUMN -->
-      <div class="space-y-5">
-        <div class="reveal glass rounded-3xl p-7">
-          <div class="flex items-start gap-4">
-            <span class="w-11 h-11 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center shrink-0">
-              <i data-lucide="map-pin" class="w-5 h-5 text-volt"></i>
-            </span>
-            <div class="flex-1">
-              <h3 class="font-display font-extrabold italic uppercase tracking-tight">Address</h3>
-              <p class="mt-2 text-sm text-zinc-300 leading-relaxed">C-245, Main 100 Feet Rd, Durgapuri Extension,<br>Hardevpuri, Shahdara, Delhi — 110093</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="text-[11px] font-semibold px-3 py-1.5 rounded-full border border-white/12 text-zinc-300 flex items-center gap-1.5"><i data-lucide="grid-2x2" class="w-3 h-3 text-volt"></i>Plus code: M7QW+R9 Delhi</span>
-                <button id="copyAddr" class="text-[11px] font-semibold px-3 py-1.5 rounded-full border border-white/12 text-zinc-300 hover:border-volt hover:text-volt transition-colors flex items-center gap-1.5"><i data-lucide="copy" class="w-3 h-3"></i><span id="copyLabel">Copy address</span></button>
-              </div>
-            </div>
+    <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+      <div class="space-y-5 reveal">
+        <div class="card p-6 flex items-start gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-indigo-100 grid place-items-center"><i data-lucide="map-pin" class="w-5 h-5 text-[var(--indigo)]"></i></span>
+          <div class="flex-1">
+            <p class="font-display font-bold text-lg">Address</p>
+            <p class="text-indigo-950/65 font-medium">1/2239, Shanti Building, Ram Nagar, Shahdara, Delhi 110032</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Inspire+Academy,+1/2239,+Shanti+Building,+Ram+Nagar,+Shahdara,+Delhi+110032" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--indigo)] mt-2 hover:underline">Get directions <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
           </div>
         </div>
-
-        <div class="reveal glass rounded-3xl p-7">
-          <div class="flex items-start gap-4">
-            <span class="w-11 h-11 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center shrink-0">
-              <i data-lucide="clock" class="w-5 h-5 text-volt"></i>
-            </span>
-            <div class="flex-1">
-              <div class="flex items-center justify-between gap-3 flex-wrap">
-                <h3 class="font-display font-extrabold italic uppercase tracking-tight">Hours &amp; popular times</h3>
-                <span class="text-[11px] font-semibold px-3 py-1.5 rounded-full bg-green-400/10 border border-green-400/30 text-green-300 flex items-center gap-1.5">
-                  <span class="live-dot w-1.5 h-1.5 rounded-full bg-green-400"></span>Open · Closes 10 PM
-                </span>
-              </div>
-              <p class="mt-2 text-sm text-zinc-400">Open all 7 days · 6:00 AM – 10:00 PM</p>
-
-              <div class="mt-5 flex gap-1.5 flex-wrap" id="dayPicker">
-                <button data-day="0" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Mon</button>
-                <button data-day="1" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Tue</button>
-                <button data-day="2" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Wed</button>
-                <button data-day="3" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Thu</button>
-                <button data-day="4" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Fri</button>
-                <button data-day="5" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Sat</button>
-                <button data-day="6" class="day-btn text-[11px] font-bold px-3 py-1.5 rounded-full border border-white/12 text-zinc-400 hover:border-volt/50 transition-colors">Sun</button>
-              </div>
-
-              <div class="mt-5">
-                <div id="barsWrap" class="flex items-end gap-[3px] h-24"></div>
-                <div class="relative h-4 mt-2 text-[10px] text-zinc-600 font-medium">
-                  <span class="absolute left-0">6a</span>
-                  <span class="absolute left-[20%] -translate-x-1/2">9a</span>
-                  <span class="absolute left-[40%] -translate-x-1/2">12p</span>
-                  <span class="absolute left-[60%] -translate-x-1/2">3p</span>
-                  <span class="absolute left-[80%] -translate-x-1/2">6p</span>
-                  <span class="absolute right-0">9p</span>
-                </div>
-                <p id="busyNote" class="mt-3 text-[12px] text-zinc-400 flex items-center gap-1.5"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-volt"></i><span>Usually busiest around 8 PM</span></p>
-              </div>
-            </div>
+        <div class="card p-6 flex items-start gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-amber-100 grid place-items-center"><i data-lucide="phone" class="w-5 h-5 text-amber-600"></i></span>
+          <div class="flex-1">
+            <p class="font-display font-bold text-lg">Call admissions</p>
+            <p class="text-indigo-950/65 font-medium">097166 92702 — the fastest way to ask about batches</p>
+            <a href="tel:+919716692702" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--indigo)] mt-2 hover:underline">Call now <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
           </div>
         </div>
-
-        <div class="reveal glass rounded-3xl p-7">
-          <div class="flex items-start gap-4">
-            <span class="w-11 h-11 rounded-2xl bg-volt/12 border border-volt/25 flex items-center justify-center shrink-0">
-              <i data-lucide="phone" class="w-5 h-5 text-volt"></i>
-            </span>
-            <div class="flex-1">
-              <h3 class="font-display font-extrabold italic uppercase tracking-tight">Call or WhatsApp</h3>
-              <a href="tel:+918700954343" class="mt-2 block font-display font-black italic text-2xl hover:text-volt transition-colors">087009 54343</a>
-              <div class="mt-4 flex flex-wrap gap-3">
-                <a href="tel:+918700954343" class="inline-flex items-center gap-2 bg-volt text-[#07080a] font-bold text-[12px] uppercase tracking-wide px-5 py-2.5 rounded-full hover:brightness-110 transition-all">
-                  <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Call now
-                </a>
-                <a href="https://wa.me/918700954343?text=Hi%20Fit%20Generation%20Gym!%20I%20found%20you%20online%20and%20want%20to%20know%20more%20about%20membership." target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-white/15 font-bold text-[12px] uppercase tracking-wide px-5 py-2.5 rounded-full hover:border-volt hover:text-volt transition-colors">
-                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
-                </a>
-              </div>
-            </div>
+        <div class="card p-6 flex items-start gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-emerald-100 grid place-items-center"><i data-lucide="clock" class="w-5 h-5 text-emerald-600"></i></span>
+          <div class="flex-1">
+            <p class="font-display font-bold text-lg">Hours</p>
+            <p class="text-indigo-950/65 font-medium">Open · Closes 9 PM <span class="text-indigo-950/40">(as listed on Google — call to confirm today's timings)</span></p>
+          </div>
+        </div>
+        <div class="card p-6 flex items-start gap-4">
+          <span class="w-12 h-12 rounded-2xl bg-indigo-100 grid place-items-center"><i data-lucide="hash" class="w-5 h-5 text-[var(--indigo)]"></i></span>
+          <div class="flex-1">
+            <p class="font-display font-bold text-lg">Plus Code</p>
+            <p class="text-indigo-950/65 font-medium">M7JW+FJ Shahdara, Delhi</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=M7JW%2BFJ+Shahdara+Delhi" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-bold text-[var(--indigo)] mt-2 hover:underline">Open plus code in Maps <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
-
-      <!-- MAP COLUMN -->
-      <div class="reveal flex flex-col gap-5">
-        <div class="glass rounded-3xl overflow-hidden flex-1 min-h-[420px] relative">
-          <iframe
-            title="Fit Generation Gym on Google Maps"
-            src="https://maps.google.com/maps?q=28.689895704746913%2C77.29590607715417&z=16&hl=en&output=embed"
-            class="w-full h-full absolute inset-0 border-0 map-dark"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-          <div class="absolute top-4 left-4 glass-strong rounded-2xl px-4 py-3 pointer-events-none">
-            <p class="font-display font-extrabold italic uppercase text-sm tracking-tight flex items-center gap-2">
-              <i data-lucide="dumbbell" class="w-4 h-4 text-volt"></i> Fit Generation Gym
-            </p>
-            <p class="text-[11px] text-zinc-400 mt-0.5 flex items-center gap-1">
-              <i data-lucide="star" class="w-3 h-3 text-volt fill-current"></i> 4.9 · Shahdara, Delhi 110093
-            </p>
-          </div>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-4">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=28.689895704746913%2C77.29590607715417" target="_blank" rel="noopener" class="group inline-flex items-center justify-center gap-2.5 bg-volt text-[#07080a] font-display font-extrabold uppercase tracking-wide text-sm py-4 rounded-2xl hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300">
-            <i data-lucide="navigation" class="w-4 h-4"></i> Get directions
-          </a>
-          <button id="shareBtn" class="inline-flex items-center justify-center gap-2.5 glass-strong font-display font-extrabold uppercase tracking-wide text-sm py-4 rounded-2xl hover:border-volt/60 hover:-translate-y-0.5 transition-all duration-300">
-            <i data-lucide="share-2" class="w-4 h-4 text-volt"></i> <span id="shareLabel">Share</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FINAL CTA ============ -->
-<section class="relative py-24 lg:py-28 overflow-hidden border-t border-white/5">
-  <div class="absolute inset-0">
-    <img src="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600" alt="Dumbbells lined up ready for training" class="w-full h-full object-cover opacity-25" loading="lazy">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#07080a] via-[#07080a]/80 to-[#07080a]"></div>
-    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-volt/12 blur-[120px] rounded-full pointer-events-none"></div>
-  </div>
-  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
-    <p class="reveal text-volt font-display font-extrabold italic uppercase tracking-[0.3em] text-xs">No excuses</p>
-    <h2 class="reveal font-display font-black italic uppercase tracking-tight leading-[0.9] text-[clamp(2.6rem,7vw,5.5rem)] mt-5">
-      Your first session<br>is <span class="text-volt">on us.</span>
-    </h2>
-    <p class="reveal mt-6 text-zinc-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-      Walk in, meet the trainers, feel the atmosphere — then decide. That's how 106 members rated us 4.9★.
-    </p>
-    <div class="reveal mt-9 flex flex-wrap justify-center gap-4">
-      <a href="#join" class="inline-flex items-center gap-2.5 bg-volt text-[#07080a] font-display font-extrabold uppercase tracking-wide px-9 py-4 rounded-full text-sm hover:brightness-110 hover:-translate-y-1 transition-all duration-300 shadow-[0_0_50px_-10px_rgba(212,249,58,.55)]">
-        <i data-lucide="message-circle" class="w-4 h-4"></i> Claim free trial
-      </a>
-      <a href="tel:+918700954343" class="inline-flex items-center gap-2.5 glass rounded-full px-8 py-4 text-sm font-semibold hover:border-volt/60 transition-colors">
-        <i data-lucide="phone" class="w-4 h-4 text-volt"></i> 087009 54343
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="border-t border-white/8 pt-16 pb-8">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="grid md:grid-cols-4 gap-10">
-      <div class="md:col-span-2">
-        <a href="#top" class="flex items-center gap-3">
-          <span class="w-10 h-10 rounded-xl bg-volt flex items-center justify-center">
-            <i data-lucide="dumbbell" class="w-5 h-5 text-[#07080a]"></i>
-          </span>
-          <span class="leading-none">
-            <span class="font-display italic font-black uppercase tracking-tight text-lg block">Fit Generation</span>
-            <span class="text-[10px] tracking-[0.35em] uppercase text-zinc-500">फिट जनरेशन जिम</span>
-          </span>
+      <div class="reveal relative rounded-[2rem] overflow-hidden shadow-2xl shadow-indigo-950/20 border-4 border-white min-h-[420px]">
+        <iframe title="Inspire Academy on Google Maps" src="https://maps.google.com/maps?q=Inspire%20Academy%20Shanti%20Building%20Ram%20Nagar%20Shahdara%20Delhi%20110032&z=16&output=embed" class="absolute inset-0 w-full h-full" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Inspire+Academy,+1/2239,+Shanti+Building,+Ram+Nagar,+Shahdara,+Delhi+110032" target="_blank" rel="noopener" class="btn btn-amber absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold shadow-xl">
+          <i data-lucide="navigation" class="w-4 h-4"></i> Navigate
         </a>
-        <p class="mt-5 text-sm text-zinc-400 leading-relaxed max-w-sm">Strength, ambition, and consistency on Main 100 Feet Road. Modern equipment, certified trainers, and East Delhi's most supportive training community.</p>
-        <div class="mt-5 flex items-center gap-2 text-sm">
-          <span class="stars flex gap-0.5 text-volt">
-            <i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i>
-          </span>
-          <span class="text-zinc-300 font-semibold">4.9</span>
-          <span class="text-zinc-500">· 106 reviews</span>
-        </div>
-      </div>
-      <div>
-        <h4 class="font-display font-extrabold italic uppercase tracking-tight text-sm">Explore</h4>
-        <ul class="mt-4 space-y-3 text-sm text-zinc-400">
-          <li><a href="#services" class="hover:text-volt transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-volt"></i>Programs</a></li>
-          <li><a href="#why" class="hover:text-volt transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-volt"></i>Why us</a></li>
-          <li><a href="#reviews" class="hover:text-volt transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-volt"></i>Reviews</a></li>
-          <li><a href="#contact" class="hover:text-volt transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-volt"></i>Location</a></li>
-          <li><a href="#join" class="hover:text-volt transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-volt"></i>Free trial</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-display font-extrabold italic uppercase tracking-tight text-sm">Contact</h4>
-        <ul class="mt-4 space-y-3 text-sm text-zinc-400">
-          <li class="flex items-start gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 text-volt shrink-0 mt-0.5"></i>C-245, Main 100 Feet Rd, Durgapuri Ext., Shahdara, Delhi 110093</li>
-          <li><a href="tel:+918700954343" class="flex items-center gap-2.5 hover:text-volt transition-colors"><i data-lucide="phone" class="w-4 h-4 text-volt shrink-0"></i>087009 54343</a></li>
-          <li class="flex items-center gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-volt shrink-0"></i>Daily · 6:00 AM – 10:00 PM</li>
-          <li class="flex items-center gap-2.5"><i data-lucide="grid-2x2" class="w-4 h-4 text-volt shrink-0"></i>Plus code M7QW+R9</li>
-        </ul>
       </div>
     </div>
-    <div class="mt-14 pt-7 border-t border-white/8 flex flex-wrap items-center justify-between gap-4 text-[12px] text-zinc-500">
-      <p>© <span id="year">2025</span> Fit Generation Gym · Shahdara, Delhi. All rights reserved.</p>
-      <div class="flex items-center gap-5">
-        <a href="https://www.google.com/maps/search/?api=1&query=Fit+Generation+Gym+Durgapuri+Extension+Shahdara+Delhi+110093" target="_blank" rel="noopener" class="hover:text-volt transition-colors">Suggest an edit</a>
-        <a href="#top" class="hover:text-volt transition-colors flex items-center gap-1.5">Back to top <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i></a>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="pb-20 md:pb-28 px-5 md:px-8">
+  <div class="reveal max-w-7xl mx-auto relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[var(--indigo)] via-indigo-700 to-[#1B1844] text-white px-8 md:px-16 py-16 md:py-20 text-center shadow-2xl shadow-indigo-950/40">
+    <div class="absolute inset-0 opacity-[0.08]" style="background-image:linear-gradient(to right,#fff 1px,transparent 1px),linear-gradient(to bottom,#fff 1px,transparent 1px);background-size:34px 34px"></div>
+    <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-amber-400/30 blur-[100px]"></div>
+    <div class="relative">
+      <p class="font-display font-bold text-amber-300 tracking-widest text-xs uppercase mb-4">इंस्पायर अकादमी · Shahdara, Delhi</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-6xl tracking-tight leading-[1.05] max-w-3xl mx-auto">Let the right mentors inspire your next result.</h2>
+      <p class="mt-5 text-indigo-100/85 max-w-xl mx-auto text-lg">Walk in at Shanti Building, Ram Nagar — the team is there till 9 PM — or send a quick enquiry and we'll take it from there.</p>
+      <div class="mt-9 flex flex-wrap justify-center gap-4">
+        <button data-open-modal class="btn btn-amber inline-flex items-center gap-2 rounded-full px-8 py-4 font-bold text-base">Enquire on WhatsApp <i data-lucide="message-circle" class="w-5 h-5"></i></button>
+        <a href="tel:+919716692702" class="btn inline-flex items-center gap-2 rounded-full px-8 py-4 font-bold border-2 border-white/30 hover:bg-white/10"><i data-lucide="phone" class="w-5 h-5"></i> 097166 92702</a>
+      </div>
+      <p class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-indigo-100/70"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i> Rated 4.8 / 5 by 69 students &amp; parents on Google</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#14113A] text-indigo-100/75 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-12">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="w-11 h-11 rounded-2xl bg-[var(--amber)] text-[var(--ink)] grid place-items-center"><i data-lucide="graduation-cap" class="w-6 h-6"></i></span>
+        <span class="leading-tight">
+          <span class="font-display font-bold text-lg text-white block">Inspire Academy</span>
+          <span class="text-xs text-indigo-100/50 font-medium">इंस्पायर अकादमी</span>
+        </span>
+      </div>
+      <p class="mt-5 text-sm leading-relaxed max-w-xs">A coaching centre in Ram Nagar, Shahdara — rated 4.8★ from 69 Google reviews by students and parents.</p>
+      <div class="flex gap-1 mt-4">
+        <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+        <span class="text-xs font-bold ml-2 mt-0.5">4.8 · 69 REVIEWS</span>
       </div>
     </div>
+    <div>
+      <p class="text-white font-display font-bold mb-4">Explore</p>
+      <ul class="space-y-2.5 text-sm font-semibold">
+        <li><a href="#about" class="hover:text-amber-300 transition-colors">About the academy</a></li>
+        <li><a href="#info" class="hover:text-amber-300 transition-colors">Centre information</a></li>
+        <li><a href="#mentors" class="hover:text-amber-300 transition-colors">Mentors &amp; praise</a></li>
+        <li><a href="#reviews" class="hover:text-amber-300 transition-colors">Student reviews</a></li>
+        <li><a href="#visit" class="hover:text-amber-300 transition-colors">Visit us</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white font-display font-bold mb-4">Contact</p>
+      <ul class="space-y-3 text-sm font-medium">
+        <li class="flex gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-amber-400"></i> 1/2239, Shanti Building, Ram Nagar, Shahdara, Delhi 110032</li>
+        <li class="flex gap-2.5"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-amber-400"></i> <a href="tel:+919716692702" class="hover:text-amber-300">097166 92702</a></li>
+        <li class="flex gap-2.5"><i data-lucide="clock" class="w-4 h-4 mt-0.5 text-amber-400"></i> Open · Closes 9 PM</li>
+        <li class="flex gap-2.5"><i data-lucide="hash" class="w-4 h-4 mt-0.5 text-amber-400"></i> Plus code: M7JW+FJ Shahdara, Delhi</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 mt-12 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-indigo-100/45">
+    <p>© 2026 Inspire Academy, Shahdara · Details sourced from the academy's public Google listing.</p>
+    <p>Photos on this page are illustrative — teacher photos are intentionally not displayed.</p>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/918700954343?text=Hi%20Fit%20Generation%20Gym!%20I%20want%20to%20book%20my%20free%20trial%20session." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
-   class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-[0_12px_35px_-8px_rgba(37,211,102,.7)] hover:scale-110 hover:-translate-y-1 transition-all duration-300">
-  <i data-lucide="message-circle" class="w-6 h-6 text-[#07080a]"></i>
-  <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-volt border-2 border-[#07080a]"></span>
-</a>
+<!-- FLOATING ENQUIRE -->
+<button data-open-modal id="floatBtn" class="ping fixed bottom-6 right-5 md:right-8 z-40 btn btn-amber rounded-full pl-5 pr-7 py-4 font-bold inline-flex items-center gap-2.5 shadow-2xl shadow-amber-600/40 text-base">
+  <i data-lucide="message-circle" class="w-5 h-5"></i> Enquire Now
+</button>
+
+<!-- MODAL -->
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 hidden items-center justify-center p-4 md:p-6">
+  <div id="modalOverlay" class="absolute inset-0 bg-[#14113A]/70 backdrop-blur-sm opacity-0"></div>
+  <div class="sheet relative w-full max-w-md card p-7 md:p-9 max-h-[92vh] overflow-y-auto">
+    <button id="modalClose" aria-label="Close" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-indigo-50 grid place-items-center hover:bg-indigo-100 transition-colors"><i data-lucide="x" class="w-4.5 h-4.5 text-indigo-950"></i></button>
+    <div class="w-14 h-14 rounded-2xl bg-[var(--amber)] grid place-items-center mb-5"><i data-lucide="graduation-cap" class="w-7 h-7 text-[var(--ink)]"></i></div>
+    <h3 id="modalTitle" class="font-display font-extrabold text-2xl md:text-3xl tracking-tight">Admission Enquiry</h3>
+    <p class="text-sm text-indigo-950/60 mt-1.5">Fill this in — it opens WhatsApp with your details pre-typed to <span class="font-bold text-indigo-950">097166 92702</span>.</p>
+    <form id="enquiryForm" class="mt-6 space-y-4" novalidate>
+      <div>
+        <label for="fName" class="text-xs font-bold uppercase tracking-widest text-indigo-950/55">Your name</label>
+        <input id="fName" type="text" autocomplete="name" placeholder="e.g. Simran Kaur" class="mt-1.5 w-full rounded-2xl border-2 border-indigo-100 bg-[var(--paper)] px-4 py-3 font-semibold placeholder:font-medium placeholder:text-indigo-950/30 transition-all">
+      </div>
+      <div>
+        <label for="fPhone" class="text-xs font-bold uppercase tracking-widest text-indigo-950/55">Your phone</label>
+        <input id="fPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number" class="mt-1.5 w-full rounded-2xl border-2 border-indigo-100 bg-[var(--paper)] px-4 py-3 font-semibold placeholder:font-medium placeholder:text-indigo-950/30 transition-all">
+      </div>
+      <div>
+        <label for="fCourse" class="text-xs font-bold uppercase tracking-widest text-indigo-950/55">What are you looking for?</label>
+        <input id="fCourse" type="text" placeholder="e.g. tuition for class 8 maths…" class="mt-1.5 w-full rounded-2xl border-2 border-indigo-100 bg-[var(--paper)] px-4 py-3 font-semibold placeholder:font-medium placeholder:text-indigo-950/30 transition-all">
+        <div class="flex flex-wrap gap-2 mt-2.5">
+          <button type="button" class="chip rounded-full bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 text-xs font-bold text-indigo-900/75 transition-colors">Tuition for school studies</button>
+          <button type="button" class="chip rounded-full bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 text-xs font-bold text-indigo-900/75 transition-colors">Coaching for my child</button>
+          <button type="button" class="chip rounded-full bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 text-xs font-bold text-indigo-900/75 transition-colors">Not sure — need guidance</button>
+        </div>
+      </div>
+      <p id="formError" class="hidden text-sm font-bold text-rose-600"></p>
+      <button type="submit" class="btn btn-amber w-full inline-flex justify-center items-center gap-2 rounded-full px-6 py-4 font-bold text-base">Send via WhatsApp <i data-lucide="send" class="w-4.5 h-4.5"></i></button>
+      <a href="tel:+919716692702" class="w-full inline-flex justify-center items-center gap-2 text-sm font-bold text-[var(--indigo)] hover:underline"><i data-lucide="phone" class="w-4 h-4"></i> Prefer to talk? Call 097166 92702</a>
+    </form>
+  </div>
+</div>
 
 <script>
-lucide.createIcons();
+  // ---------- Reveal on scroll ----------
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .stats').forEach(el => io.observe(el));
 
-const WA_NUMBER = "918700954343";
+  // ---------- Header shadow on scroll ----------
+  const header = document.getElementById('siteHeader');
+  const onScroll = () => header.classList.toggle('shadow-lg', window.scrollY > 24);
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-/* ---------- Mobile menu ---------- */
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-let menuOpen = false;
-function setMenu(open){
-  menuOpen = open;
-  mobileMenu.classList.toggle("hidden", !open);
-  menuBtn.innerHTML = open ? '<i data-lucide="x" class="w-5 h-5"></i>' : '<i data-lucide="menu" class="w-5 h-5"></i>';
-  lucide.createIcons();
-}
-menuBtn.addEventListener("click", () => setMenu(!menuOpen));
-document.querySelectorAll(".mobile-link").forEach(l => l.addEventListener("click", () => setMenu(false)));
-
-/* ---------- Nav shadow on scroll ---------- */
-const nav = document.getElementById("nav");
-addEventListener("scroll", () => {
-  nav.classList.toggle("shadow-[0_10px_40px_-15px_rgba(0,0,0,.8)]", scrollY > 10);
-  nav.classList.toggle("border-white/10", scrollY > 10);
-}, {passive:true});
-
-/* ---------- Reveal on scroll ---------- */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting){
-      e.target.classList.add("in");
-      if (e.target.querySelector(".ratebar")) animateRateBars(e.target);
-      io.unobserve(e.target);
-    }
-  });
-}, {threshold:.12});
-document.querySelectorAll(".reveal").forEach(el => io.observe(el));
-
-/* ---------- Rating bars ---------- */
-function animateRateBars(scope){
-  scope.querySelectorAll(".ratebar").forEach((b,i) => {
-    setTimeout(() => { b.style.transition = "width 1s cubic-bezier(.22,1,.36,1)"; b.style.width = b.dataset.w + "%"; }, 120*i);
-  });
-}
-
-/* ---------- Counters ---------- */
-const counterIO = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    counterIO.unobserve(e.target);
-    const el = e.target, end = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec||"0");
-    const t0 = performance.now(), dur = 1400;
-    (function tick(now){
-      const p = Math.min((now-t0)/dur, 1), ease = 1-Math.pow(1-p,3);
-      el.textContent = (end*ease).toFixed(dec);
-      if (p<1) requestAnimationFrame(tick); else el.textContent = end.toFixed(dec).replace(/\.0$/,"");
-    })(t0);
-  });
-}, {threshold:.6});
-document.querySelectorAll("[data-count]").forEach(el => counterIO.observe(el));
-
-/* ---------- WhatsApp form ---------- */
-document.getElementById("waForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const name = document.getElementById("fName").value.trim();
-  const phone = document.getElementById("fPhone").value.trim();
-  const service = document.getElementById("fService").value;
-  if (!name || !phone) return;
-  const msg = "Hi Fit Generation Gym! I'm " + name + ". I'm interested in " + service.replace(/&amp;/g,"&") + ". You can reach me at " + phone + ". I'd like to book my free trial session and know more about membership.";
-  window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg), "_blank");
-  const btn = document.getElementById("waSubmit");
-  const original = btn.innerHTML;
-  btn.innerHTML = '<i data-lucide="check-circle-2" class="w-4 h-4"></i> Opening WhatsApp…';
-  lucide.createIcons();
-  setTimeout(() => { btn.innerHTML = original; lucide.createIcons(); }, 2600);
-});
-
-/* ---------- Service card pre-select ---------- */
-document.querySelectorAll(".service-cta").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const val = btn.dataset.service.replace(/&amp;/g,"&");
-    const sel = document.getElementById("fService");
-    [...sel.options].forEach(o => { if (o.text.replace(/\s+/g," ").trim().toLowerCase().includes(val.toLowerCase().slice(0,12))) sel.value = o.value; });
-    document.getElementById("join").scrollIntoView({behavior:"smooth", block:"center"});
-    setTimeout(() => document.getElementById("fName").focus({preventScroll:true}), 700);
-  });
-});
-
-/* ---------- Popular times ---------- */
-const HOURS = ["6a","7a","8a","9a","10a","11a","12p","1p","2p","3p","4p","5p","6p","7p","8p","9p"];
-const TIMES = {
-  0:[45,72,95,68,42,35,40,38,42,50,58,70,88,96,100,82],
-  1:[48,75,92,66,40,36,42,40,45,52,60,72,90,94,98,80],
-  2:[44,70,94,70,44,34,38,40,44,50,56,68,86,98,100,84],
-  3:[46,74,90,64,42,36,40,42,46,52,58,70,88,95,97,81],
-  4:[50,76,96,72,46,38,42,44,48,54,62,74,92,97,99,85],
-  5:[55,80,98,85,60,48,45,42,40,55,65,78,90,92,88,70],
-  6:[60,85,90,75,55,40,35,30,32,40,45,55,65,70,60,45]
-};
-const DAY_FULL = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const barsWrap = document.getElementById("barsWrap");
-const busyNote = document.getElementById("busyNote").querySelector("span");
-
-function levelLabel(v){ return v>=85?"very busy":v>=60?"moderately busy":v>=40?"a little busy":"usually not busy"; }
-
-function renderBars(day){
-  const data = TIMES[day];
-  barsWrap.innerHTML = "";
-  const max = Math.max(...data), peak = data.indexOf(max);
-  data.forEach((v,i) => {
-    const b = document.createElement("div");
-    b.className = "bar flex-1 rounded-t-[3px] " + (i===peak ? "bg-volt" : "bg-white/25");
-    b.style.height = Math.max(v,8) + "%";
-    b.style.transitionDelay = (i*28) + "ms";
-    b.title = HOURS[i] + " — " + levelLabel(v);
-    barsWrap.appendChild(b);
-  });
-  barsWrap.classList.remove("bars-in");
-  requestAnimationFrame(() => requestAnimationFrame(() => barsWrap.classList.add("bars-in")));
-  const hr = 6 + peak, label = hr>12 ? (hr-12)+" PM" : hr===12 ? "12 PM" : hr+" AM";
-  busyNote.textContent = DAY_FULL[day] + ": usually busiest around " + label;
-}
-renderBars(new Date().getDay() === 0 ? 6 : new Date().getDay()-1);
-
-const dayBtns = document.querySelectorAll(".day-btn");
-function markDay(day){
-  dayBtns.forEach(b => {
-    const active = +b.dataset.day === day;
-    b.classList.toggle("bg-volt", active);
-    b.classList.toggle("text-[#07080a]", active);
-    b.classList.toggle("border-volt", active);
-    b.classList.toggle("text-zinc-400", !active);
-  });
-}
-markDay(new Date().getDay() === 0 ? 6 : new Date().getDay()-1);
-dayBtns.forEach(b => b.addEventListener("click", () => { renderBars(+b.dataset.day); markDay(+b.dataset.day); }));
-
-/* ---------- Copy address ---------- */
-document.getElementById("copyAddr").addEventListener("click", async () => {
-  try { await navigator.clipboard.writeText("Fit Generation Gym, C-245, Main 100 Feet Rd, Durgapuri Extension, Hardevpuri, Shahdara, Delhi 110093"); } catch(e){}
-  const l = document.getElementById("copyLabel");
-  l.textContent = "Copied!";
-  setTimeout(() => l.textContent = "Copy address", 2000);
-});
-
-/* ---------- Share ---------- */
-document.getElementById("shareBtn").addEventListener("click", async () => {
-  const payload = { title:"Fit Generation Gym — Shahdara, Delhi", text:"4.9★ rated gym on Main 100 Feet Rd, Durgapuri Extension, Shahdara. Free trial session!", url: location.href };
-  if (navigator.share){ try { await navigator.share(payload); } catch(e){} }
-  else {
-    try { await navigator.clipboard.writeText(payload.text + " " + location.href); } catch(e){}
-    const l = document.getElementById("shareLabel"); l.textContent = "Link copied!";
-    setTimeout(() => l.textContent = "Share", 2000);
+  // ---------- Hero tabs (pure JS) ----------
+  const tabBtns = [...document.querySelectorAll('[data-tab]')];
+  const panels = [...document.querySelectorAll('.tab-panel')];
+  let tabIndex = 0, tabTimer;
+  function activateTab(i, manual) {
+    tabIndex = i;
+    tabBtns.forEach((b, bi) => { b.classList.toggle('active', bi === i); b.setAttribute('aria-selected', bi === i); });
+    panels.forEach((p, pi) => p.classList.toggle('active', pi === i));
+    if (manual) restartTabTimer();
   }
-});
+  function restartTabTimer() { clearInterval(tabTimer); tabTimer = setInterval(() => activateTab((tabIndex + 1) % tabBtns.length), 7000); }
+  tabBtns.forEach((b, i) => b.addEventListener('click', () => activateTab(i, true)));
+  restartTabTimer();
 
-/* ---------- Live open status ---------- */
-(function(){
-  const h = new Date().getHours() + new Date().getMinutes()/60;
-  const el = document.getElementById("openStatus");
-  el.textContent = (h >= 6 && h < 22) ? "Open now · Closes 10:00 PM · Open all 7 days" : "Opens 6:00 AM today · 6 AM – 10 PM, all 7 days";
-})();
+  // ---------- Mentor row arrows ----------
+  const row = document.getElementById('snapRow');
+  const step = () => Math.min(420, row.clientWidth * 0.8);
+  document.getElementById('nextCard').addEventListener('click', () => row.scrollBy({ left: step(), behavior: 'smooth' }));
+  document.getElementById('prevCard').addEventListener('click', () => row.scrollBy({ left: -step(), behavior: 'smooth' }));
 
-/* ---------- Year ---------- */
-document.getElementById("year").textContent = new Date().getFullYear();
+  // ---------- Modal ----------
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('modalOverlay');
+  const floatBtn = document.getElementById('floatBtn');
+  function openModal() {
+    modal.classList.remove('hidden'); modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => overlay.classList.remove('opacity-0'));
+    floatBtn.style.display = 'none';
+    setTimeout(() => document.getElementById('fName').focus(), 350);
+  }
+  function closeModal() {
+    overlay.classList.add('opacity-0');
+    setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.style.overflow = ''; floatBtn.style.display = ''; }, 250);
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(b => b.addEventListener('click', openModal));
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+
+  // ---------- Optional course chips ----------
+  document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => {
+    document.getElementById('fCourse').value = c.textContent.trim();
+  }));
+
+  // ---------- Enquiry form → WhatsApp deep link ----------
+  const form = document.getElementById('enquiryForm');
+  const err = document.getElementById('formError');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('fName').value.trim();
+    const phone = document.getElementById('fPhone').value.replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '');
+    const course = document.getElementById('fCourse').value.trim();
+    err.classList.add('hidden'); form.classList.remove('shake');
+    if (name.length < 2) return fail('Please tell us your name.');
+    if (phone.length !== 10) return fail('Please enter a valid 10-digit phone number.');
+    const msg = 'Hello Inspire Academy! I am ' + name + '. I want to enquire about admission'
+      + (course ? ' — interested in: ' + course : '')
+      + '. My contact number is ' + phone + '. Please share the details. (Enquiry via website)';
+    window.open('https://wa.me/919716692702?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+  function fail(m) {
+    err.textContent = m; err.classList.remove('hidden');
+    form.classList.add('shake'); setTimeout(() => form.classList.remove('shake'), 450);
+  }
+
+  // ---------- Lucide icons ----------
+  lucide.createIcons();
 </script>
 </body>
 </html>
